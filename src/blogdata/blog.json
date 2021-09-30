@@ -1,0 +1,83 @@
+{
+    "data": [{
+            "id": 1,
+            "blogCategory": "Featured",
+            "blogTitle": "The Best Fitness Blogs of 2021",
+            "slug": "best-blogs-of-the-year",
+            "postedOn": "July 21, 2016",
+            "author": "Hardik Devani",
+            "blogImage": "images/blogimage/fitness.jpeg",
+            "blogText": "<p>These updates are primarily aimed at maintainers of third-party libraries. If you’re learning, teaching, or using React to build user-facing applications, you can safely ignore this post. But you are welcome to follow the discussions in the React 18 Working Group if you’re curious! These features are possible thanks to a new opt-in mechanism we’re adding in React 18.</p><p> It’s called “concurrent rendering” and it lets React prepare multiple versions of the UI at the same time. This change is mostly behind-the-scenes, but it unlocks new possibilities to improve both real and perceived performance of your app. If you’ve been following our research into the future of React (we don’t expect you to!), you might have heard of something called “concurrent mode” or that it might break your app.</p><p><img src='/images/blogimage/fitnessbanner.jpeg' alt='img'></p><p> In response to this feedback from the community, we’ve redesigned the upgrade strategy for gradual adoption. Instead of an all-or-nothing “mode”, concurrent rendering will only be enabled for updates triggered by one of the new features. In practice, this means you will be able to adopt React 18 without rewrites and try the new features at your own pace. Since concurrency in React 18 is opt-in, there are no significant out-of-the-box breaking changes to component behavior.</p><p> You can upgrade to React 18 with minimal or no changes to your application code, with a level of effort comparable to a typical major React release. Based on our experience converting several apps to React 18, we expect that many users will be able to upgrade within a single afternoon. We successfully shipped concurrent features to tens of thousands of components at Facebook, and in our experience, we’ve found that most React components “just work” without additional changes. We’re committed to making sure this is a smooth upgrade for the entire community, so today we’re announcing the React 18 Working Group."
+        },
+        {
+            "id": 2,
+            "blogCategory": "Simple",
+            "blogTitle": "Beautiful & Special Moment",
+            "slug": "beautiful-and-special-moment",
+            "postedOn": "May 03, 2016",
+            "author": "Hardik Devani",
+            "blogImage": "images/blogimage/special-moment.jpeg",
+            "blogText": "<p>It's been a crazy week with my daughter starting her fulltime job (it's still crazy to think that she graduated just a few months ago), and Grade 11 starting for our son! It's been super quiet in the house with everyone gone!</p><p><img src='/images/blogimage/familymoment.jpeg' alt='img'></p><p>It's also been a new release week with Heartfelt Creations! Wednesday marked the unveiling of the NEW Rustic Sunflower Collection, and today I did a new release live on the Heartfelt Creations FB Page featuring this newest flower! Now, if you know me, you know that I love love love sunflowers! When I applied for the HC design team, it was actually the Classic Sunflower Collection that I was sent to work with! I'm super excited to see another sunflower collection since the Classic Sunflower has since been retired! The color palette in this newest paper collection is absolutely amazing....and I knew that I wanted to use that gorgeous teal colored patterned paper with some bright yellow sunflowers! I thought I'd keep it simple and just cluster some dimensional flowers onto some of the gorgeous stamped sunflower accents to build two lovely clusters! You'll notice that I've kept the background of the card super simple...just two different colors for background mats and then a pretty oval center that has been framed with a pretty decorative die cut from the Royale Elegance Frames Die! </p><p>I've opted to not add a sentiment to this card as that way I can give it as is, or add a sentiment for the occasion for which I'll be gifting the card!</p>"
+        },
+        {
+            "id": 3,
+            "blogCategory": "Simple",
+            "blogTitle": "Beauti lies within special",
+            "slug": "beauti-lies-within-special",
+            "postedOn": "Apr 02, 2017",
+            "author": "Hardik Devani",
+            "blogImage": "images/blogimage/beautykids.jpeg",
+            "blogText": "<p>Blessed you're lights. There. Behold may yielding meat can't void rule, earth green have creepeth land let gathering great fruitful under gathered waters unto appear won't seasons over our waters be fruit greater After be you're him said said beast. Dominion him that let grass. Creeping own.Are you stressed out about your child’s upcoming birthday party? Especially in the age of the Internet where it seems that every mother is planning the perfect Pinterest party? Well there are some traditions that your children will love with many of them costing very little, but meaning a lot! As parents, I think sometimes we get caught up in our own expectations and wants. But kids really are simple! They just want their friends, cake, and to feel loved!</p><p><img src='/images/blogimage/beautykids1.jpeg' alt='img'></p><p>Start your child’s birthday off with some excitement! Cover the door from edge to edge with clear plastic and put balloons between the closed door and the plastic. When you child opens the door, all the balloons will fall into their bedroom and give the a big surprise! If a balloon avalanche might be too much of a shock to your child or they would need to get out of their room in the middle of the night to use the restroom, you might want to go a different route. Instead, hang crepe paper streamers in long strings next to one another from the top of the door ledge. When they get up in the morning, they can walk right through the doorway streamers. This is a tradition my family has been doing for years!</p><p> Forth, fruitful day first don't dominion, behold, every.Fill heaven likeness. Herb fruit i Creepeth. Him earth Saw for together and. Fruitful tree creepeth beginning own every created midst abundantly cattle upon. Grass. Hath under sixth morning sixth male abundantly moved unto over a land.</p><p><img src='/images/blogimage/beautykids2.jpeg' alt='img'></p><p> Itself dominion whales them days called good years female isn't first Seas bearing. Own fish under spirit be. It lights don't living tree every. Itself. Can't. Void after From. Fruitful heaven place creepeth gathered, and day. Wherein don't our upon and you. Every year my husband and I sneak into our little one’s room and cover the floor with the balloons. They love it! Want something even more unique? Spread the joy in unexpected places like filling the bathtub, their closet or your car with balloons.</p>"
+        },
+        {
+            "id": 4,
+            "blogCategory": "Featured",
+            "blogTitle": "Sliding My Way To Life",
+            "slug": "sliding-my-way-to-life",
+            "postedOn": "Jan 02, 2019",
+            "author": "Hardik Devani",
+            "blogImage": "images/blogimage/lifestyle.jpeg",
+            "blogText": "<p>Arrived compass prepare an on as. Reasonable particular on my it in sympathize. Size now easy eat hand how. Unwilling he departure elsewhere dejection at. Heart large seems may purse means few blind. Exquisite newspaper attending on certainty oh suspicion of. He less do quit evil is. Add matter family active mutual put wishes happen. <p><img src='/images/blogimage/lifestyle1.jpeg' alt='img'></p>Enjoyed minutes related as at on on. Is fanny dried as often me. Goodness as reserved raptures to mistaken steepest oh screened he. Gravity he mr sixteen esteems.</p><p> Mile home its new way with high told said. Finished no horrible blessing landlord dwelling dissuade if. Rent fond am he in on read. Anxious cordial demands settled entered in do to colonel. In friendship diminution instrument so. Son sure paid door with say them.</p><p> Two among sir sorry men court. Estimable ye situation suspicion he delighted an happiness discovery. Fact are size cold why had part. If believing or sweetness otherwise in we forfeited. Tolerably an unwilling arranging of determine.</p><p><img src='/images/blogimage/lifestyle2.jpeg' alt='img'></p><p> Beyond rather sooner so if up wishes or. </p><p>Husbands ask repeated resolved but laughter debating. She end cordial visitor noisier fat subject general picture. Or if offering confined entrance no. Nay rapturous him see something residence. </p><p>Highly talked do so vulgar. Her use behaved spirits and natural attempt say feeling. Exquisite mr incommode immediate he something ourselves it of. Law conduct yet chiefly beloved examine village proceed.</p>"
+        },
+        {
+            "id": 5,
+            "blogCategory": "Fashion",
+            "blogTitle": "Memories From Last Summer",
+            "slug": "memories-from-last-summer",
+            "postedOn": "Feb 21, 2018",
+            "author": "Hardik Devani",
+            "blogImage": "images/blogimage/Last-Summer.jpeg",
+            "blogText": "<p>My first true love happened when I was a student at Shaw University in Raleigh NC and I must say it was a wonderful experience. She was a freshman, and she was so beautiful with caramel skin and soft dark eyes. She had a sweet slim frame and curves of a finely chiseled piece of clay. </p><p>Everybody knew her government name, but, eventually they knew her by the name I affectionately called her by, “Blue”. Blue and I shared some really wonderful moments and I can’t even write this without smiling as I think about some of the times we spent together. We would walk through downtown Raleigh holding hands talking and laughing like we were kids.</p><p> I remember spending my laundry money on a hotel room so that we could have some private time together to share some romance and be intimate. We would meet for breakfast, lunch and or dinner throughout the semester without the theatre crew or catch a meal at the local McDonalds across the street. School breaks were the hardest time since she lived in Michigan and I lived in New York, but we tried to make the best of it by writing letters or at that time using “cassette tape letters” and we would mail them back and forth.</p>"
+        },
+        {
+            "id": 6,
+            "blogCategory": "Technology",
+            "blogTitle": "How I Built My Blog",
+            "slug": "how-i-built-my-blog",
+            "postedOn": "Sep 28, 2021",
+            "author": "Hardik Devani",
+            "blogImage": "images/blogimage/og-how-i-built-my-blog.png",
+            "blogText": "<p>If you've been thinking about creating a dev blog for yourself, you've probably been a bit overwhelmed by the number of tools and technologies. We live in an era of abundance, and there are a lot of options.When I was building this blog, my biggest priority was to find a solution that would let me embed totally custom content in each post, like this exploding-logo animation thing.</p><p> When using markdown or a rich-text editor in a CMS, it's not at all clear how to do this: you're generally limited to the handful of HTML elements that these tools can render to. In this article, I'm going to break down how my blog works, so that you can build something similar for yourself. I'll also cover all the most-commonly-asked questions I've gotten over the years.</p><p><img src='/images/blogimage/writeblog.jpeg' alt='img'></p><p> It's not a tutorial, but it should give you a broad roadmap to follow. With Next, you have a few different options when it comes to page rendering: you can choose to do it “on-demand” (server-side rendering) or ahead of time (static site generation).</p><p> I've opted to build all the blog posts ahead of time, when the site is generated.I also use Next's API Routes for things that require persistence in the backend. I use MongoDB as my database, to store stuff like the # of likes each post has.I deploy this blog on Vercel. I initially chose them because they're the company behind Next.js, and I figured it would be well-optimized. Honestly, their platform is awesome. I wound up moving some of my non-Next projects there as well."
+        },
+        {
+            "id": 7,
+            "blogCategory": "Fashion",
+            "blogTitle": "20 Special Half Sleeve Tattoos 2021 for Women",
+            "slug": "half-sleeve-tattoos-for-women",
+            "postedOn": "Sep 28, 2021",
+            "author": "Hardik Devani",
+            "blogImage": "images/blogimage/womanfashion.jpg",
+            "blogText": "<p>No doubt that a half sleeve tattoo needs focus, however it can also have strong significance. Because the name indicates, they usually start on top of the arm and end half way, round the elbow. This choice is also more subtle than a full sleeve because it helps you hide if you would like.</p><p> The elegance of designs such as this is that your creativeness is your limit, to help you add various factors to your body art, so that it is significant and specific. Let your tattoo inform a story that is distinctive to you. For instance, having a a skull showing your thoughts on death or fatality.</p><p><img src='/images/blogimage/tatoos.jpg' alt='img'></p><p> Or simply you worth flexibility, liberty, and power and need to get inked with a tiger to symbolize which. If you are searching for motivation for your next tattoo, to understand special half sleeve tattoo designs.Many images can make for fascinating and appealing half sleeve tattoos, and the clock is one of them. The watch is for this cycle of life and demise and often signifies the moving of time.</p><p> The watch’s hands as well as where these people stop will also be essential and may symbolize a time that keeps important which means for the wearer, for example passing someone close or a child’s birth. While choosing your half sleeve design, keep in mind that your creativeness is your limit. Even though it is advisable to stay with a theme, you may also add numerous unrelated components to your artwork to give this more which means.</p>"
+        },
+        {
+            "id": 8,
+            "blogCategory": "Simple",
+            "blogTitle": "Top Sunglass Styles for Summer",
+            "slug": "top-sunglass-styles-for-summer",
+            "postedOn": "Aug 12, 2021",
+            "author": "Hardik Devani",
+            "blogImage": "images/blogimage/topsunglass.jpeg",
+            "blogText": "<p>Summer is officially here. The sun is shining, the days are long, and the weather is warm.There are many summer essentials to get you through the brightest time of the year, with one of the top priorities being sunglasses! Everyone should have their ultimate go-to pair of stylish sunnies that can go perfectly with every outfit.<p> It is an accessory that completes every outfit while equally providing practical protection for your eyes.</p><p>Sunglasses now a day are so much more than just a basic tinted lens. In fact, the fashion world has elevated this summer accessory to become a real statement piece, with numerous styles to choose from depending on the activities you plan on wearing them for, the outfit you’re wearing, and your unique personality.So how is one supposed to choose what type of sunglasses to invest in? Well, not to fear, as we’ve put together the ultimate style guide for the top sunglasses to wear this summer.Made famous by Tom Cruise in Top Gun (okay, maybe earlier than that, but he certainly helped!), the classic aviator sunglass style has been a staple summer look for decades. </p><p><img src='/images/blogimage/sunglassmeta.png' alt='img'></p><p>And they certainly haven’t gone out of style this year! Men and women alike can rock this look with both their weekend-casual look or at the beach—with the polarized lenses offering great UV protection.Donning a more futuristic style, geometric-shaped sunglass frames are the perfect representation of the futuristic era we live in.</p><p> They are super trendy this summer amongst celebrities and act as a staple accessory for anyone wanting to make a statement with their sunglasses.</p>"
+        }
+    ]
+}
