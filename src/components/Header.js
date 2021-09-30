@@ -1,5 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, useContext } from 'react'
+import { Flex, Icon, Image, Box, Badge } from '@chakra-ui/react'
 import { Link } from 'react-router-dom'
+import { ShopContext } from '../context/ShopContext';
+import { MdMenu, MdShoppingCart } from 'react-icons/md'
 
 const Header = () => {
     const [time, setTime] = useState(new Date().toLocaleTimeString());
@@ -9,19 +12,12 @@ const Header = () => {
             setTime(date.toLocaleTimeString('en-US', { hour12: true }));
         }, 1000);
     }, [time]);
+    const { openCart, openMenu, checkout } = useContext(ShopContext)
     return (
         <div>
             <div id="wrapper">
                 <header id="header" className="alt">
                     <div className="sitelogo"><Link to="/" className="logo"><strong>HD</strong> <span>by REACT</span></Link>{time}</div>
-                    {/* <div className="mainmenu">
-                        <ul className="links">
-                            <li><Link to="/">Home</Link></li>
-                            <li><Link to="/about">About</Link></li>
-                            <li><Link to="/portfolio">Portfolio</Link></li>
-                            <li><Link to="/contact">Contact</Link></li>
-                        </ul>
-                    </div> */}
                     <div className="miniheader">
                         <input className="menu-btn" type="checkbox" id="menu-btn" />
                         <label classname="menu-icon" for="menu-btn"><span className="navicon"></span></label>
@@ -32,24 +28,11 @@ const Header = () => {
                             <li><Link to="/shop">Shop</Link></li>
                             <li><Link to="/post">Blog</Link></li>
                             <li><Link to="/contact">Contact</Link></li>
+                            <li><Box><Icon onClick={() => openCart()} fill="#fff" cursor="pointer" as={MdShoppingCart} w={30} h={30}></Icon>
+                                <Badge backgroundColor="#f3eafd" borderRadius="50%" className="cartQuan">{checkout.lineItems?.length}</Badge></Box></li>
                         </ul>
                     </div>
                 </header>
-
-                {/* <!-- Menu --> */}
-
-                {/* <nav id="menu">
-                    <ul className="links">
-                        <li><Link to="index.html">Home</Link></li>
-                        <li><Link to="landing.html">Landing</Link></li>
-                        <li><Link to="generic.html">Generic</Link></li>
-                        <li><Link to="elements.html">Elements</Link></li>
-                    </ul>
-                    <ul className="actions stacked">
-                        <li><Link to="#" className="button primary fit">Get Started</Link></li>
-                        <li><Link to="#" className="button fit">Log In</Link></li>
-                    </ul>
-                </nav> */}
             </div></div>
     )
 }

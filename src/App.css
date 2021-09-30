@@ -4160,6 +4160,7 @@ textarea {
         clear: none;
         float: right;
         max-height: none;
+        padding-right: 30px;
     }
     .miniheader .menu-icon {
         display: none;
@@ -4484,4 +4485,53 @@ content.postContent img {
 .carousel.carousel-slider ul {
     margin: 0 0 0em 0 !important;
     padding-left: 0em !important;
+}
+
+a.minicartName {
+    color: #000;
+    font-weight: 600;
+    border: none;
+}
+
+.minicartPrice {
+    color: #000;
+    font-weight: 600;
+}
+
+svg.minicartTrash {
+    color: #000;
+}
+
+.checkoutButton {
+    color: #242943 !important;
+    border: 1px solid #242943;
+}
+
+.checkoutButton a {
+    color: #242943 !important;
+}
+
+.checkoutButton a:hover {
+    color: #242943;
+    border: none;
+}
+
+span.cartQuan {
+    background-color: #242944 !important;
+    position: absolute;
+    right: 22px;
+    top: 14px;
+    font-size: 14px;
+    border-radius: 100%;
+    width: 22px;
+    height: 23px;
+    text-align: center;
+    line-height: 18px;
+    font-weight: 600;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.propagedesc {
+    color: #fff;
 }

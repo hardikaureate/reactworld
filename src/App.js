@@ -14,6 +14,8 @@ import BlogDetailsPage from './components/BlogDetailsPage';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import MainShop from './pages/MainShop';
+import ProductPage from './shop_component/ProductPage';
+import Cart from './shop_component/Cart';
 //import CategoryPost from './components/CategoryPost';
 
 
@@ -23,6 +25,7 @@ function App() {
       <Router>
         <ScrollToTop>
           <Header />
+          <Cart />
           <Route path="/" exact>
             <Home />
           </Route>
@@ -41,6 +44,9 @@ function App() {
           {/* <Route path="/category/:slug" exact>
           <CategoryPost />
         </Route> */}
+        <Route path="/products/:handle" exact>
+            <ProductPage />
+          </Route>
           <Route path="/post/" exact>
             <AllPosts />
           </Route>

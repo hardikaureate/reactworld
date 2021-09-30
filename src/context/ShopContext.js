@@ -49,7 +49,7 @@ class ShopProvider extends Component {
             })
     }
 
-    addItemToCheckout = async (variantId, quantity) => {
+    addItemToCheckout = async(variantId, quantity) => {
         const lineItemsToAdd = [
             {
                 variantId,
@@ -57,7 +57,7 @@ class ShopProvider extends Component {
             }
         ]
         const checkout = await client.checkout.addLineItems(this.state.checkout.id, lineItemsToAdd)
-        this.setState({ checkout: checkout })
+        this.setState({ checkout: checkout})
 
         this.openCart()
     }
@@ -70,11 +70,11 @@ class ShopProvider extends Component {
     fetchAllProducts = async () => {
         const products = await client.product.fetchAll();
         this.setState({ products: products })
-        console.log('ddddddddddddd',products);
+        //console.log('ddddddddddddd',products);
     }
 
     fetchAllCollectionProducts = async () => {
-        const collections = await client.collection.fetchAllWithProducts();
+        const collections = await client.collection.fetchAllWithProducts(  );
         this.setState({ collections: collections })
         //console.log(collections);
     }
@@ -83,13 +83,14 @@ class ShopProvider extends Component {
         //const collectionsdata = await client.collection.fetchWithProducts(collectionId)
         const collectionsdata = await client.collection.fetchWithProducts('Z2lkOi8vc2hvcGlmeS9Db2xsZWN0aW9uLzI3MjE2NDA2MTM3MA==')
         this.setState({ collectionsdata: collectionsdata })
-        console.log('cccccccc', collectionsdata);
+        //console.log('cccccccc', collectionsdata);
         //console.log('xxxxxxxx',collectionsdata.products);
     }
 
     fetchProductWithHandle = async (handle) => {
         const product = await client.product.fetchByHandle(handle)
         this.setState({ product: product })
+        //console.log('tttttttttttttttt',product);
     }
 
     closeCart = () => { this.setState({ isCartOpen: false }) }
