@@ -253,6 +253,7 @@ input.cartInputText {
     letter-spacing: 3px;
     font-size: 30px;
     margin: 0 0 15px;
+    text-transform: uppercase;
 }
 
 .instascript {

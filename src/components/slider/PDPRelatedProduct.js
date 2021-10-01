@@ -1,20 +1,20 @@
-import React, { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { Image, Button } from "@chakra-ui/react";
+import React, { useContext, useEffect, useState } from "react"
+import { Link } from "react-router-dom"
+import { Image, Button, Text } from "@chakra-ui/react"
 import '../../assets/CSS/productpage.css'
 import './relatedproduct.css'
-import Slider from "react-slick";
+import Slider from "react-slick"
 import Skeleton from 'react-loading-skeleton'
-import { ShopContext } from "../../context/ShopContext";
+import { ShopContext } from "../../context/ShopContext"
 
 const PDPRelatedProduct = () => {
 
-  const [loading, setLoading] = useState(true);
-  const { fetchAllProducts, products, addItemToCheckout } = useContext(ShopContext);
+  const [loading, setLoading] = useState(true)
+  const { fetchAllProducts, products, addItemToCheckout, product } = useContext(ShopContext)
   useEffect(() => {
-    setTimeout(() => setLoading(false), 2000);
-    fetchAllProducts();
-  }, [fetchAllProducts]);
+    setTimeout(() => setLoading(false), 2000)
+    fetchAllProducts()
+  }, [fetchAllProducts])
 
   const settings = {
     dots: false,
@@ -22,9 +22,9 @@ const PDPRelatedProduct = () => {
     infinite: false,
     slidesToShow: 4,
     slidesToScroll: 1,
-    autoplay: true,
-    speed: 3000,
-    autoplaySpeed: 500,
+    // autoplay: true,
+    // speed: 3000,
+    // autoplaySpeed: 500,
     responsive: [
       {
         breakpoint: 1199,
@@ -38,7 +38,14 @@ const PDPRelatedProduct = () => {
       }
     ]
   }
-  //console.log({ products });
+
+  let extractedInfo = ""
+  if (product.id) {
+    const buff = Buffer.from(product?.id, 'base64')
+    const decodedId = buff.toString('ascii')
+    extractedInfo = decodedId.split(/[\s/]+/).pop()
+  }
+  //console.log({ products })
 
   if (!products) return <div>...Loading</div>
   return (
@@ -46,10 +53,13 @@ const PDPRelatedProduct = () => {
       <div className="inner">
         <div className="relatedProduct">
           <div className="Container">
-            <div class="relatedProductTitle">
+            {/* <div class="relatedProductTitle">
+              <h2>Related Sacheu Products</h2>
+            </div> */}
+            <div class="instaTitle">
               <h2>Related Sacheu Products</h2>
             </div>
-            <div className="productContainer">
+            <div className="relatedproductContainer">
               <div className="product-listing">
                 <Slider infinite={products && products.length > 3} {...settings}>
                   {products.map((product) => (
@@ -71,6 +81,11 @@ const PDPRelatedProduct = () => {
                           <p className="relatedProPrice">
                             {loading ? <Skeleton height={30} /> : `${product.variants[0].price}`}
                           </p>
+                          
+                            <div style={{ textAlign: 'center' }} className="">
+                              <div class="yotpo bottomLine" data-product-id="4746070032433" style={{ display: 'inline-block' }}></div>
+                            </div>
+                          
                           {loading ? <Skeleton height={42} /> : <Button mt="3%" className="cartButton" onClick={() => addItemToCheckout(product.variants[0].id, 1)}>Add To Cart</Button>}
                         </div>
                       </div>
@@ -83,7 +98,7 @@ const PDPRelatedProduct = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default PDPRelatedProduct;
+export default PDPRelatedProduct

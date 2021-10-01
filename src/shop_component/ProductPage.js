@@ -21,6 +21,14 @@ const ProductPage = () => {
         setProductQuantity(quantityAsNumber)
     }
 
+    let extractedInfo = "";
+    if (product.id) {
+        const buff = Buffer.from(product?.id, 'base64');
+        const decodedId = buff.toString('ascii');
+        extractedInfo = decodedId.split(/[\s/]+/).pop();
+    }
+    console.log('review-->', product)
+
     //    if (!product.title) return <div>Loading....</div>
     return (
         <>
@@ -47,13 +55,14 @@ const ProductPage = () => {
                                             {loading ? <Skeleton width={650} height={70} /> : `${product.title}`}
 
                                         </Heading>
-
+                                        
                                         {/* <Heading pb="2rem" className="PDP_productTitle">{product.id}</Heading> */}
                                         <Text className="PDP_cartprice" fontWeight="bold" pb="1rem">{loading ? <Skeleton width={75} height={70} /> : `$${product.variants[0].price}`}</Text>
 
+
                                         <Text>
                                         <div style={{ textAlign: 'center' }} className="prosreview">
-                                            <div class="yotpo bottomLine" data-product-id="4746070032433" style={{ display: 'inline-block' }}></div>
+                                            <div class="yotpo bottomLine" data-product-id={extractedInfo} style={{ display: 'inline-block' }}></div>
                                         </div>
                                         </Text>
 
