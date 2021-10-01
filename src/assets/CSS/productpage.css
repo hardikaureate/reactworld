@@ -265,7 +265,7 @@ input.cartInputText {
     align-items: center;
 }
 
-.prosreview a {
+.prosreview a.text-m {
     color: #fff !important;
     font-size: 20px !important;
     padding-left: 10px !important;

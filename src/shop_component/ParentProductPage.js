@@ -7,6 +7,7 @@ import PDPCustLove from './PDPCustLove'
 import PDPYoutube from './PDPYoutube'
 import Testimonial from '../components/slider/Testimonial'
 import PDPProductReview from './PDPProductReview'
+import PDPRelatedProduct from '../components/slider/PDPRelatedProduct'
 
 const ParentProductPage = () => {
     return (
@@ -17,6 +18,7 @@ const ParentProductPage = () => {
             <PDPYoutube />
             <Testimonial />
             <PDPProductReview />
+            <PDPRelatedProduct />
             <HomeTextBanner />
             <HomeContact />
         </>

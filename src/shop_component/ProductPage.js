@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useContext } from 'react'
 import { useParams } from 'react-router-dom'
-import '../assets/CSS/productpage.css'
+import './../assets/CSS/productpage.css'
 import { ShopContext } from '../context/ShopContext'
 import { Grid, Image, Text, Heading, Flex } from '@chakra-ui/react'
 import Skeleton from 'react-loading-skeleton'
