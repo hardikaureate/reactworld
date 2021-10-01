@@ -5,18 +5,24 @@ import Skeleton from 'react-loading-skeleton'
 import { Box, Image } from '@chakra-ui/react'
 import '../assets/CSS/shoppage.css'
 const ShopProducts = () => {
-    const { fetchAllProducts, products, addItemToCheckout } = useContext(ShopContext)
+    const { fetchAllProducts, products, addItemToCheckout, product } = useContext(ShopContext)
     const [loading, setLoading] = useState(true);
     useEffect(() => {
         setTimeout(() => setLoading(false), 2000);
         fetchAllProducts()
     }, [fetchAllProducts])
-    console.log('Shop-Products', products)
+    //console.log('Shop-Products', products)
+
+    // let extractedInfo = "";
+    // if (product.id) {
+    //     const buff = Buffer.from(product?.id, 'base64');
+    //     const decodedId = buff.toString('ascii');
+    //     extractedInfo = decodedId.split(/[\s/]+/).pop();
+    // }
 
     if (!products) return <div>...Loading</div>
     return (
         <>
-
             <Box>
                 <div className="product-listing">
                     {products.map((product, i) => (
@@ -38,6 +44,10 @@ const ShopProducts = () => {
                                         <p className="relatedProPrice">
                                             {loading ? <Skeleton height={30} /> : `$${product.variants[0].price}`}
                                         </p>
+                                        <div style={{ textAlign: 'center' }}>
+                                            <div class="yotpo bottomLine" data-product-id="4746070032433" style={{ display: 'inline-block' }}></div>
+                                        </div>
+
                                         {/* <Button mt="3%" className="cartButton" onClick={() => addItemToCheckout(product.variants[0].id, 1)}>
                                             Add To Cart
                                         </Button> */}
@@ -51,7 +61,6 @@ const ShopProducts = () => {
                     ))}
                 </div>
             </Box>
-
         </>
     )
 }

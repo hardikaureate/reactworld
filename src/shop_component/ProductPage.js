@@ -5,6 +5,7 @@ import { ShopContext } from '../context/ShopContext'
 import { Grid, Image, Text, Heading, Flex } from '@chakra-ui/react'
 import Skeleton from 'react-loading-skeleton'
 import NumberInput from './NumberInput'
+import Slider from "react-slick"
 
 const ProductPage = () => {
     const { handle } = useParams()
@@ -29,6 +30,31 @@ const ProductPage = () => {
     }
     console.log('review-->', product)
 
+    const settings = {
+        dots: false,
+        arrows: false,
+        infinite: true,
+        slidesToShow: 4,
+        vertical: true,
+        verticalSwiping: true,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 1000,
+        autoplaySpeed: 500,
+        focusOnSelect: true,
+        // responsive: [
+        //   {
+        //     breakpoint: 1006,
+        //     settings: {
+        //       slidesToShow: 1,
+        //       dots: true,
+        //       vertical: false,
+        //       verticalSwiping: false
+        //     }
+        //   }
+        // ]
+      }
+
     //    if (!product.title) return <div>Loading....</div>
     return (
         <>
@@ -41,9 +67,16 @@ const ProductPage = () => {
 
                                     <div className="proLeft productImage">
                                         <div className="imageThumbnail">
-                                            {product.images && product.images.map((item, i) => {
+                                            {/* {product.images && product.images.map((item, i) => {
                                                 return loading ? <Skeleton width={90} height={70} /> : <Image key={i} onClick={() => setImageclick(i)} className="productMainImage" src={item && item.src} width="10%" height="auto" />
-                                            })}
+                                            })} */}
+
+                                            <Slider {...settings}>
+                                                {product.images && product.images.map((item, index) => {
+                                                    return loading ? <Skeleton width={90} height={70} /> : <Image key={index} src={item && item.src} alt="sacheu" onClick={() => setImageclick(index)} className="prodmetaImages" />
+                                                    ;
+                                                })}
+                                            </Slider>
                                         </div>
                                         <Flex className="productImg" justifyContent="center" alignItems="center">
                                             {loading ? <Skeleton width={650} height={600} /> : <Image src={product.images[imageclick].src} />}
@@ -55,15 +88,15 @@ const ProductPage = () => {
                                             {loading ? <Skeleton width={650} height={70} /> : `${product.title}`}
 
                                         </Heading>
-                                        
+
                                         {/* <Heading pb="2rem" className="PDP_productTitle">{product.id}</Heading> */}
                                         <Text className="PDP_cartprice" fontWeight="bold" pb="1rem">{loading ? <Skeleton width={75} height={70} /> : `$${product.variants[0].price}`}</Text>
 
 
                                         <Text>
-                                        <div style={{ textAlign: 'center' }} className="prosreview">
-                                            <div class="yotpo bottomLine" data-product-id={extractedInfo} style={{ display: 'inline-block' }}></div>
-                                        </div>
+                                            <div style={{ textAlign: 'center' }} className="prosreview">
+                                                <div class="yotpo bottomLine" data-product-id={extractedInfo} style={{ display: 'inline-block' }}></div>
+                                            </div>
                                         </Text>
 
                                         <Text pb="2rem" color="gray.500" className="propagedesc">{loading ? <Skeleton width={650} height={200} /> : <div dangerouslySetInnerHTML={{ __html: product.description }}></div>}</Text>

@@ -2,6 +2,10 @@ body {
     background-color: transparent;
 }
 
+.pdpmeta {
+    display: inline !important;
+}
+
 .wrapper {
     width: 100%;
     margin: 0 auto;
