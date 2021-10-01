@@ -21,7 +21,7 @@ const ProductPage = () => {
         setProductQuantity(quantityAsNumber)
     }
 
-//    if (!product.title) return <div>Loading....</div>
+    //    if (!product.title) return <div>Loading....</div>
     return (
         <>
             <div id="wrapper">
@@ -51,7 +51,11 @@ const ProductPage = () => {
                                         {/* <Heading pb="2rem" className="PDP_productTitle">{product.id}</Heading> */}
                                         <Text className="PDP_cartprice" fontWeight="bold" pb="1rem">{loading ? <Skeleton width={75} height={70} /> : `$${product.variants[0].price}`}</Text>
 
-
+                                        <Text>
+                                        <div style={{ textAlign: 'center' }} className="prosreview">
+                                            <div class="yotpo bottomLine" data-product-id="4746070032433" style={{ display: 'inline-block' }}></div>
+                                        </div>
+                                        </Text>
 
                                         <Text pb="2rem" color="gray.500" className="propagedesc">{loading ? <Skeleton width={650} height={200} /> : <div dangerouslySetInnerHTML={{ __html: product.description }}></div>}</Text>
 

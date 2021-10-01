@@ -95,6 +95,7 @@ body {
 
 .PDP_cartprice {
     font-size: 30px;
+    margin-bottom: 10px !important;
 }
 
 .PDP_productTitle {
@@ -256,4 +257,23 @@ input.cartInputText {
 
 .instascript {
     padding-bottom: 75px;
+}
+
+.prosreview {
+    text-align: left !important;
+    display: flex;
+    align-items: center;
+}
+
+.prosreview a {
+    color: #fff !important;
+    font-size: 20px !important;
+    padding-left: 10px !important;
+    padding-top: 3px !important;
+    font-weight: 600;
+}
+
+.proreviewsection {
+    padding-top: 20px !important;
+    background: #fff;
 }
