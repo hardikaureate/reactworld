@@ -42,20 +42,12 @@ const ProductPage = () => {
         speed: 1000,
         autoplaySpeed: 500,
         focusOnSelect: true,
-        // responsive: [
-        //   {
-        //     breakpoint: 1006,
-        //     settings: {
-        //       slidesToShow: 1,
-        //       dots: true,
-        //       vertical: false,
-        //       verticalSwiping: false
-        //     }
-        //   }
-        // ]
-      }
+    }
 
-    //    if (!product.title) return <div>Loading....</div>
+    if (!product.title) return <div><div class="loading">Loading&#8230;</div></div>
+    //if (!product.title) return <div><div class="spinner"><div class="spinner spinner2"><div class="spinner spinner3"></div></div></div></div>
+    
+
     return (
         <>
             <div id="wrapper">
@@ -74,7 +66,7 @@ const ProductPage = () => {
                                             <Slider {...settings}>
                                                 {product.images && product.images.map((item, index) => {
                                                     return loading ? <Skeleton width={90} height={70} /> : <Image key={index} src={item && item.src} alt="sacheu" onClick={() => setImageclick(index)} className="prodmetaImages" />
-                                                    ;
+                                                        ;
                                                 })}
                                             </Slider>
                                         </div>

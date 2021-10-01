@@ -68,7 +68,8 @@ class ShopProvider extends Component {
     }
 
     fetchAllProducts = async () => {
-        const products = await client.product.fetchAll();
+        //using fetchall(50) - you can fetch 50 products from Shopify Store
+        const products = await client.product.fetchAll(50);
         this.setState({ products: products })
         //console.log('ddddddddddddd',products);
     }
