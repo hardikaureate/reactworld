@@ -1507,6 +1507,9 @@ hr.major {
         margin: 0 1em;
         padding: 0;
     }
+    .webhide {
+        display: inline-block;
+    }
     .mobfooter li a {
         font-size: 16px;
         font-weight: 600;
@@ -2982,6 +2985,12 @@ button:disabled,
 @media screen and (max-width: 736px) {
     .spotlights>section>.content {
         padding: 3em 1.5em 1em 1.5em;
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .webhide {
+        display: none !important;
     }
 }
 
@@ -4560,10 +4569,6 @@ span.cartQuan {
     font-weight: 600;
     color: #fff;
     border: 2px solid #fff;
-}
-
-.webhide {
-    display: none;
 }
 
 ul.copyright li {
