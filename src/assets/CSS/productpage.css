@@ -6,6 +6,10 @@ body {
     display: inline !important;
 }
 
+.propagedesc {
+    color: #fff !important;
+}
+
 .wrapper {
     width: 100%;
     margin: 0 auto;
@@ -451,3 +455,24 @@ input.cartInputText {
 
 
 /*Spinner CSS*/
+
+@media screen and (max-width: 767px) {
+    .instaTitle h2 {
+        font-size: 20px !important;
+    }
+    .imageThumbnail {
+        display: none;
+    }
+    .productMobile {
+        display: inline !important;
+    }
+    .Container.cart-btn.cartsize {
+        padding-left: 0px;
+    }
+    .Container.cartInput {
+        padding-left: 0px;
+    }
+    .Container.cartInput button {
+        padding: 20px !important;
+    }
+}

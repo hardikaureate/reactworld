@@ -5,7 +5,7 @@ import Skeleton from 'react-loading-skeleton'
 import { Box, Image } from '@chakra-ui/react'
 import '../assets/CSS/shoppage.css'
 const ShopProducts = () => {
-    const { fetchAllProducts, products, addItemToCheckout, product } = useContext(ShopContext)
+    const { fetchAllProducts, products, addItemToCheckout } = useContext(ShopContext)
     const [loading, setLoading] = useState(true);
     useEffect(() => {
         setTimeout(() => setLoading(false), 2000);
@@ -20,7 +20,8 @@ const ShopProducts = () => {
     //     extractedInfo = decodedId.split(/[\s/]+/).pop();
     // }
 
-    if (!products) return <div>...Loading</div>
+    if (!products) return <div><div class="loading">Loading&#8230;</div></div>
+
     return (
         <>
             <Box>
@@ -48,9 +49,6 @@ const ShopProducts = () => {
                                             <div class="yotpo bottomLine" data-product-id="4746070032433" style={{ display: 'inline-block' }}></div>
                                         </div>
 
-                                        {/* <Button mt="3%" className="cartButton" onClick={() => addItemToCheckout(product.variants[0].id, 1)}>
-                                            Add To Cart
-                                        </Button> */}
                                         <a href="#" className="button small fit" onClick={() => addItemToCheckout(product.variants[0].id, 1)}>
                                             Buy Now
                                         </a>

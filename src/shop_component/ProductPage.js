@@ -28,7 +28,7 @@ const ProductPage = () => {
         const decodedId = buff.toString('ascii');
         extractedInfo = decodedId.split(/[\s/]+/).pop();
     }
-    console.log('review-->', product)
+    //console.log('review-->', product)
 
     const settings = {
         dots: false,
@@ -54,8 +54,8 @@ const ProductPage = () => {
                 <section id="two">
                     <div className="inner">
                         <div class="box alt">
-                            <div class="gtr-50 gtr-uniform">
-                                <Grid templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)"]} m="auto">
+                            <div class="">
+                                <Grid className="productMobile" templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)"]} m="auto">
 
                                     <div className="proLeft productImage">
                                         <div className="imageThumbnail">
