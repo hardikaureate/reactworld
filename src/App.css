@@ -1486,6 +1486,17 @@ hr.major {
         transform: none !important;
         height: auto !important;
     }
+    .PDP_productTitle {
+        font-size: 22px !important;
+        letter-spacing: 2.2px;
+        padding-top: 30px;
+    }
+    .pdpmeta {
+        padding-left: 0px;
+    }
+    /* .cartgroup .cartInput {
+        width: 170px !important;
+    } */
 }
 
 @media screen and (max-width: 480px) {

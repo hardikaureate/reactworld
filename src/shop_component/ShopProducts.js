@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { ShopContext } from '../context/ShopContext'
 import Skeleton from 'react-loading-skeleton'
-import { Box, Image, Button } from '@chakra-ui/react'
+import { Box, Image } from '@chakra-ui/react'
 import '../assets/CSS/shoppage.css'
 const ShopProducts = () => {
     const { fetchAllProducts, products, addItemToCheckout } = useContext(ShopContext)

@@ -18,12 +18,13 @@ const Cart = () => {
     const {isCartOpen, closeCart, checkout, removeLineItem} = useContext(ShopContext)
     console.log({checkout})
     return (
-        <div>
+        <div className="maincartDrawer">
             <Drawer
         isOpen={isCartOpen}
         placement="right"
         onClose={closeCart}
         size="sm"
+        
       >
         <DrawerOverlay />
         <DrawerContent>

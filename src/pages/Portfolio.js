@@ -1,6 +1,6 @@
 import React from 'react'
 import AllProject from '../components/Allproject'
-import CasestudyProjects from '../components/Casestudyprojects'
+//import CasestudyProjects from '../components/Casestudyprojects'
 import HomeContact from '../components/HomeContact'
 
 const About = () => {

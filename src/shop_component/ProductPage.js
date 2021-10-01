@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import '../assets/CSS/productpage.css'
 import { ShopContext } from '../context/ShopContext'
-import { Box, Grid, Button, Image, Text, Heading, Flex } from '@chakra-ui/react'
+import { Grid, Image, Text, Heading, Flex } from '@chakra-ui/react'
 import Skeleton from 'react-loading-skeleton'
 import NumberInput from './NumberInput'
 
@@ -38,13 +38,13 @@ const ProductPage = () => {
                                             })}
                                         </div>
                                         <Flex className="productImg" justifyContent="center" alignItems="center">
-                                            {loading ? <Skeleton width={750} height={600} /> : <Image src={product.images[imageclick].src} />}
+                                            {loading ? <Skeleton width={650} height={600} /> : <Image src={product.images[imageclick].src} />}
                                         </Flex>
                                     </div>
 
-                                    <Flex flexDirection="column" justifyContent="center" px="2rem">
+                                    <Flex flexDirection="column" justifyContent="center" px="2rem" className="pdpmeta">
                                         <Heading pb="2rem" className="PDP_productTitle">
-                                            {loading ? <Skeleton width={750} height={70} /> : `${product.title}`}
+                                            {loading ? <Skeleton width={650} height={70} /> : `${product.title}`}
 
                                         </Heading>
 
@@ -53,7 +53,7 @@ const ProductPage = () => {
 
 
 
-                                        <Text pb="2rem" color="gray.500" className="propagedesc">{loading ? <Skeleton width={750} height={200} /> : <div dangerouslySetInnerHTML={{ __html: product.description }}></div>}</Text>
+                                        <Text pb="2rem" color="gray.500" className="propagedesc">{loading ? <Skeleton width={650} height={200} /> : <div dangerouslySetInnerHTML={{ __html: product.description }}></div>}</Text>
 
                                         <div className="klarnaText">
                                             4 interest-free payments of $6.00. <strong>Klarna</strong> Learn more

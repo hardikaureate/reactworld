@@ -215,6 +215,7 @@ body {
 
 .cartgroup .cartInput {
     width: 255px;
+    z-index: 0;
 }
 
 .cartgroup .cartQuantityInput {
