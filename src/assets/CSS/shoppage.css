@@ -287,3 +287,12 @@ iframe.videoframe {
     flex-wrap: wrap;
     margin: 0 -15px;
 }
+
+.ytubesection iframe {
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.clovesection {
+    padding-top: 20px !important;
+}

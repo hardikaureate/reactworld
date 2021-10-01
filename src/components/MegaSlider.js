@@ -34,7 +34,7 @@ const MegaSlider = () => {
     return (
         <>
             <div id="wrapper">
-                    <Carousel showArrows={true} className="fullwidthslider" autoPlay={1} interval={300000000} showArrows={0} showThumbs={false}>
+                    <Carousel showArrows={true} className="fullwidthslider" autoPlay={1} interval={10000} showArrows={0} showThumbs={false}>
                         {/* {images.slice(0, 5).map(image => { */}
                         {images.map((image, key) => {
                             return (

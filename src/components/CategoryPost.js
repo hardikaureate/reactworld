@@ -6,7 +6,7 @@ import Sidebar from './Sidebar';
 const CategoryPost = () => {
     var  slug  = useParams()
     var post = findPostByCataegory(slug);
-    console.log('allcatttttttttttt', slug)
+    console.log('allcat', slug)
     //const { blogCategory, blogTitle, postedOn, author, blogImage, blogText } = post
     // var myvariable = post.blogImage
     // var divStyle = {

@@ -238,3 +238,22 @@ input.cartInputText {
     border-radius: 4px;
     opacity: 1;
 }
+
+.instaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.instaTitle h2 {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 30px;
+    margin: 0 0 15px;
+}
+
+.instascript {
+    padding-bottom: 75px;
+}

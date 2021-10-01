@@ -1,7 +1,7 @@
 import React from 'react'
 
 const CasestudyProjects = ({ projectData }) => {
-    { console.log('00000', projectData) }
+    
     return (
         <>
             <section id="two">

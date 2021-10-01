@@ -79,5 +79,32 @@
             "blogImage": "images/blogimage/topsunglass.jpeg",
             "blogText": "<p>Summer is officially here. The sun is shining, the days are long, and the weather is warm.There are many summer essentials to get you through the brightest time of the year, with one of the top priorities being sunglasses! Everyone should have their ultimate go-to pair of stylish sunnies that can go perfectly with every outfit.<p> It is an accessory that completes every outfit while equally providing practical protection for your eyes.</p><p>Sunglasses now a day are so much more than just a basic tinted lens. In fact, the fashion world has elevated this summer accessory to become a real statement piece, with numerous styles to choose from depending on the activities you plan on wearing them for, the outfit you’re wearing, and your unique personality.So how is one supposed to choose what type of sunglasses to invest in? Well, not to fear, as we’ve put together the ultimate style guide for the top sunglasses to wear this summer.Made famous by Tom Cruise in Top Gun (okay, maybe earlier than that, but he certainly helped!), the classic aviator sunglass style has been a staple summer look for decades. </p><p><img src='/images/blogimage/sunglassmeta.png' alt='img'></p><p>And they certainly haven’t gone out of style this year! Men and women alike can rock this look with both their weekend-casual look or at the beach—with the polarized lenses offering great UV protection.Donning a more futuristic style, geometric-shaped sunglass frames are the perfect representation of the futuristic era we live in.</p><p> They are super trendy this summer amongst celebrities and act as a staple accessory for anyone wanting to make a statement with their sunglasses.</p>"
         }
-    ]
+    ],
+    "testimonials": [{
+            "images": {
+                "src": "images/client1.jpg"
+            },
+            "name": "@Maria",
+            "testimonialText": "I ordered this tool from GMA deals and it arrived very quickly within a few days and was packaged quite nicely so the tool was well protected from any shipping damage. The tool is very good quality. It's stainless steel and feels good on your face, very cooling."
+        },
+        {
+            "images": {
+                "src": "images/client2.jpg"
+            },
+            "name": "@Chioma",
+            "testimonialText": "This is amazing! Paired with Thick Skin, everything feels so luxurious and moisturized. I also have the beauty roller which is also amazing and super sturdy. My face feels refreshed and relaxed! Self-care on another level!"
+        },
+        {
+            "images": {
+                "src": "images/client3.jpg"
+            },
+            "name": "@ISABELLA C",
+            "testimonialText": "Highly recommend! Within 2 weeks I feel like my face looked more lifted and awake. I probably use it 3x a week and even then I feel like it’s defining my cheekbones and jawline. The gua sha is heavy, shiny, and feels very luxe. Would highly recommend adding this step into your self care routine, highly relaxing! :)"
+        }
+
+    ],
+    "article_one": { "hoverURL": "images/pdpbg1.jpg" },
+    "article_two": { "hoverURL": "images/pdpbg2.jpg" },
+    "article_three": { "hoverURL": "images/pdpbg3.jpg" },
+    "article_four": { "hoverURL": "images/pdpbg4.jpg" }
 }
