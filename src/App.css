@@ -1519,9 +1519,6 @@ hr.major {
     .mobfooter li a:after {
         border: none;
     }
-    .inner.pdppage {
-        margin-left: 18px !important;
-    }
     svg.chakra-icon.cartIcon {
         color: #fff;
         width: 30px;
@@ -1538,6 +1535,30 @@ hr.major {
         width: 20px !important;
         height: 20px !important;
         line-height: 16px !important;
+    }
+    .header ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow: hidden;
+        background-color: #242842;
+    }
+    .header li a {
+        display: block;
+        padding: 10px 20px !important;
+        border-right: 1px solid #f4f4f4;
+        text-decoration: none;
+    }
+    .miniheader .menu-btn:checked~.menu {
+        max-height: 440px !important;
+    }
+    ul.menu li a {
+        border: none;
+    }
+    .miniheader label.menu-icon {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding: 21px 20px;
     }
 }
 
@@ -1984,7 +2005,7 @@ input[type="radio"]+label:before {
 input[type="checkbox"]+label:before,
 input[type="radio"]+label:before {
     background: rgba(212, 212, 255, 0.035);
-    content: '';
+    /* content: ''; */
     display: inline-block;
     font-size: 0.8em;
     height: 2.0625em;
@@ -1997,13 +2018,14 @@ input[type="radio"]+label:before {
     width: 2.0625em;
 }
 
-input[type="checkbox"]:checked+label:before,
+
+/* input[type="checkbox"]:checked+label:before,
 input[type="radio"]:checked+label:before {
     background: #ffffff;
     border-color: #9bf1ff;
     content: '\f00c';
     color: #242943;
-}
+} */
 
 input[type="checkbox"]:focus+label:before,
 input[type="radio"]:focus+label:before {
@@ -3214,7 +3236,7 @@ button:disabled,
 }
 
 header#header {
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color: #232842;
     position: fixed;
     top: 0;
@@ -4150,10 +4172,11 @@ textarea {
     padding: 28px 20px;
     position: relative;
     user-select: none;
+    right: 50px;
 }
 
 .miniheader .menu-icon .navicon {
-    background: #333;
+    background: #fff;
     display: block;
     height: 2px;
     position: relative;
@@ -4163,7 +4186,7 @@ textarea {
 
 .miniheader .menu-icon .navicon:before,
 .miniheader .menu-icon .navicon:after {
-    background: #333;
+    background: #fff;
     content: '';
     display: block;
     height: 100%;
@@ -4667,4 +4690,12 @@ ul.copyright li {
     z-index: 99999;
     position: absolute;
     color: #000;
+}
+
+.projectName h4 {
+    text-align: center;
+}
+
+span.image.fit.projectimg.effect_lily {
+    margin-bottom: 0.5em;
 }

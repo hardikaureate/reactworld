@@ -35,6 +35,7 @@ const Home = () => {
                 {/* <!-- Contact --> */}
                 <HomeContact />
             </LazyLoad>
+            
             </Suspense>
         </div>
     )

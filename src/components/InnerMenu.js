@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import HomeTextBanner from './HomeTextBanner'
 
 const InnerMenu = () => {
-    
+
     return (
         <div>
             <div id="main">
@@ -17,6 +17,9 @@ const InnerMenu = () => {
                         <header className="major">
                             <h3><Link to="/portfolio" className="link animate__animated animate__fadeInUp">Customer First Experience</Link></h3>
                             <p className="animate__animated animate__slideInDown">In the end, we want a business, which driven by customers.</p>
+                            <ul className="actions">
+                                <li><Link to="/contact" className="button next animate__zoomIn animate__animated">Talk to us</Link></li>
+                            </ul>
                         </header>
                     </article>
                     <article>
@@ -26,6 +29,9 @@ const InnerMenu = () => {
                         <header className="major">
                             <h3><Link to="/portfolio" className="link animate__animated animate__fadeInUp">Ingenious innovation</Link></h3>
                             <p className="animate__animated animate__slideInDown">We constantly experiment and evaluate the headless commerce</p>
+                            <ul className="actions">
+                            <li><Link to="/contact" className="button next animate__zoomIn animate__animated">Talk to us</Link></li>
+                        </ul>
                         </header>
                     </article>
                     <article>
@@ -35,6 +41,9 @@ const InnerMenu = () => {
                         <header className="major">
                             <h3><Link to="/portfolio" className="link animate__animated animate__fadeInUp">Agility and speed</Link></h3>
                             <p className="animate__animated animate__slideInDown">We believe in the world of eCommerce "speed" defines the winner.</p>
+                            <ul className="actions">
+                            <li><Link to="/contact" className="button next animate__zoomIn animate__animated">Talk to us</Link></li>
+                        </ul>
                         </header>
                     </article>
                     <article>
@@ -44,6 +53,9 @@ const InnerMenu = () => {
                         <header className="major">
                             <h3><Link to="/portfolio" className="link animate__animated animate__fadeInUp">Experience worth a decade</Link></h3>
                             <p className="animate__animated animate__slideInDown">Our team of experts have experience in their respective fields</p>
+                            <ul className="actions">
+                            <li><Link to="/contact" className="button next animate__zoomIn animate__animated">Talk to us</Link></li>
+                        </ul>
                         </header>
                     </article>
                     <article>
@@ -53,6 +65,9 @@ const InnerMenu = () => {
                         <header className="major">
                             <h3><Link to="/portfolio" className="link animate__animated animate__fadeInUp">eCommerce agency</Link></h3>
                             <p className="animate__animated animate__slideInDown">We build customer-first digital commerce experience for international brands</p>
+                            <ul className="actions">
+                            <li><Link to="/contact" className="button next animate__zoomIn animate__animated">Talk to us</Link></li>
+                        </ul>
                         </header>
                     </article>
                     <article>
@@ -62,6 +77,9 @@ const InnerMenu = () => {
                         <header className="major">
                             <h3><Link to="/portfolio" className="link animate__animated animate__fadeInUp">Less friction, More sell</Link></h3>
                             <p className="animate__animated animate__slideInDown">We help to increasing eCommerce store conversion rates.</p>
+                            <ul className="actions">
+                            <li><Link to="/contact" className="button next animate__zoomIn animate__animated">Talk to us</Link></li>
+                        </ul>
                         </header>
                     </article>
                 </section>

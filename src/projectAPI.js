@@ -1,71 +1,71 @@
 const Projectlist = [{
         id: 1,
         image: "images/pro1.jpeg",
-        name: "reactjs",
+        name: "20 North Marketing",
         category: "reactjs",
-        projectlink: "https://reactjs.org/"
+        projectlink: "https://20northmarketing.com/"
     },
     {
         id: 2,
         image: "images/pro2.jpeg",
-        name: "reactjs",
+        name: "Aaradhana Textiles",
         category: "reactjs",
-        projectlink: "https://wordpress.org/"
+        projectlink: "https://aaradhanatextile.in/"
 
     },
     {
         id: 3,
         image: "images/pro3.jpeg",
-        name: "reactjs",
+        name: "Amenity 360",
         category: "reactjs",
-        projectlink: "https://reactjs.org/"
+        projectlink: "https://www.amenity360.com/"
 
     },
     {
         id: 4,
         image: "../images/pro4.jpeg",
-        name: "vuejs",
+        name: "Fabric Pandit",
         category: "vuejs",
-        projectlink: "https://vuejs.org/"
+        projectlink: "https://fabricpandit.com/"
 
     },
     {
         id: 5,
         image: "../images/pro5.jpeg",
-        name: "wordpress",
+        name: "Chatbot",
         category: "wordpress",
-        projectlink: "https://wordpress.org/"
+        projectlink: "https://www.chatbot.com/"
 
     },
     {
         id: 6,
         image: "../images/pro6.jpeg",
-        name: "node",
+        name: "FitnessBug",
         category: "node",
-        projectlink: "https://nodejs.org/en/"
+        projectlink: "https://www.fitnessbug.co.uk/"
 
     },
     {
         id: 7,
         image: "../images/pro7.jpeg",
-        name: "nextjs",
+        name: "Jollyes",
         category: "nextjs",
-        projectlink: "https://nextjs.org/"
+        projectlink: "https://www.jollyes.co.uk/"
 
     },
     {
         id: 8,
         image: "../images/pro8.jpeg",
-        name: "vue",
+        name: "Lancer Skincare",
         category: "vue",
-        projectlink: "https://vuejs.org/"
+        projectlink: "https://www.lancerskincare.com/"
     },
     {
         id: 9,
         image: "../images/pro9.jpeg",
-        name: "wordpress",
+        name: "Pure Daily care",
         category: "wordpress",
-        projectlink: "https://wordpress.org/"
+        projectlink: "https://puredailycare.com/"
     },
 ];
 

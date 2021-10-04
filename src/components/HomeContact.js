@@ -73,7 +73,7 @@ const HomeContact = () => {
                                 </div>
                                 <ul className="actions">
                                     <li><input onClick={onSubmit} type="submit" value="Send Message" className="primary animate__zoomIn animate__animated" /></li>
-                                    <li><input onClick={formClear} type="reset" value="Clear" className="animate__zoomIn animate__animated"/></li>
+                                    <li><input onClick={formClear} type="reset" value="Clear" className="animate__zoomIn animate__animated" /></li>
                                 </ul>
                             </form>
                         </section>
@@ -83,7 +83,7 @@ const HomeContact = () => {
                                     {/* <span className="icon solid alt fa-envelope-square"></span> */}
                                     <i className="footericon fa fa-envelope"></i>
                                     <h3 className="animate__animated animate__fadeInUp">Email</h3>
-                                    <a href="mailto:hardik.devani@aureatelabs.com" className="animate__animated animate__slideInDown" style={{borderBottom:'none'}}>hardik.devani@aureatelabs.com</a>
+                                    <a href="mailto:hardik.devani@aureatelabs.com" className="animate__animated animate__slideInDown" style={{ borderBottom: 'none' }}>hardik.devani@aureatelabs.com</a>
                                 </div>
                             </section>
                             <section>
@@ -91,7 +91,7 @@ const HomeContact = () => {
                                     {/* <span className="icon brands alt fa-phone"></span> */}
                                     <i className="footericon fa fa-phone"></i>
                                     <h3 className="animate__animated animate__fadeInUp">Phone</h3>
-                                    <span className="animate__animated animate__slideInDown"><a href="tel:+919825457037" style={{borderBottom:'none'}}>(+91) 982-245-7037</a></span>
+                                    <span className="animate__animated animate__slideInDown"><a href="tel:+919825457037" style={{ borderBottom: 'none' }}>(+91) 982-245-7037</a></span>
                                 </div>
                             </section>
                             <section>
@@ -104,7 +104,8 @@ const HomeContact = () => {
                             </section>
                         </section>
                     </div>
-                </section></div>
+                </section>
+            </div>
         </>
     )
 }
