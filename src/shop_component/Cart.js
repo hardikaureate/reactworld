@@ -23,12 +23,12 @@ const Cart = () => {
         isOpen={isCartOpen}
         placement="right"
         onClose={closeCart}
-        size="sm"
-        
-      >
-        <DrawerOverlay />
-        <DrawerContent>
-          <DrawerCloseButton />
+        size="sm">
+
+        <DrawerOverlay className="mainDrwaerOverlay"/>
+        <div className="cartOverlay"></div>
+        <DrawerContent className="mainDrwaerContent">
+          <DrawerCloseButton className="cartClose"/>
           <DrawerHeader>Your Shopping Cart</DrawerHeader>
 
           <DrawerBody>
