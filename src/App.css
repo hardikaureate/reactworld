@@ -3326,6 +3326,11 @@ body.is-preload #header.alt {
     min-height: 22em;
     position: relative;
     top: -3.25em;
+    transition: all 2s linear;
+}
+
+#banner:hover {
+    background: #eee;
 }
 
 #banner:after {
@@ -3898,7 +3903,7 @@ ul.links li {
 }
 
 textarea {
-    resize: none;
+    resize: none !important;
 }
 
 
@@ -4574,4 +4579,22 @@ span.cartQuan {
 ul.copyright li {
     color: #fff !important;
     font-size: 15px;
+}
+
+.footericon:before {
+    background-color: #ffffff;
+    border-radius: 100%;
+    color: #242943;
+    display: inline-block;
+    height: 2em;
+    line-height: 2em;
+    text-align: center;
+    width: 2em;
+    position: absolute;
+}
+
+.contact-method .footericon {
+    left: 0;
+    position: absolute;
+    top: 0;
 }

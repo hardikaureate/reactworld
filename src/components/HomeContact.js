@@ -80,21 +80,24 @@ const HomeContact = () => {
                         <section className="split">
                             <section>
                                 <div className="contact-method">
-                                    <span className="icon solid alt fa-envelope-square"></span>
+                                    {/* <span className="icon solid alt fa-envelope-square"></span> */}
+                                    <i className="footericon fa fa-envelope"></i>
                                     <h3 className="animate__animated animate__fadeInUp">Email</h3>
                                     <a href="mailto:hardik.devani@aureatelabs.com" className="animate__animated animate__slideInDown" style={{borderBottom:'none'}}>hardik.devani@aureatelabs.com</a>
                                 </div>
                             </section>
                             <section>
                                 <div className="contact-method">
-                                    <span className="icon brands alt fa-phone"></span>
+                                    {/* <span className="icon brands alt fa-phone"></span> */}
+                                    <i className="footericon fa fa-phone"></i>
                                     <h3 className="animate__animated animate__fadeInUp">Phone</h3>
                                     <span className="animate__animated animate__slideInDown"><a href="tel:+919825457037" style={{borderBottom:'none'}}>(+91) 982-245-7037</a></span>
                                 </div>
                             </section>
                             <section>
                                 <div className="contact-method">
-                                    <span className="icon brands alt fa-home"></span>
+                                    {/* <span className="icon brands alt fa-home"></span> */}
+                                    <i className="footericon fa fa-home"></i>
                                     <h3 className="animate__animated animate__fadeInUp">Address</h3>
                                     <span className="animate__animated animate__slideInDown">Office No. B-206, International Commerce Centre, Nr. Kadiwala School, Ring Road, Surat, Gujarat 395002</span>
                                 </div>

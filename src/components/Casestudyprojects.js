@@ -15,7 +15,7 @@ const CasestudyProjects = ({ projectData }) => {
 
                                     <div className="col-4 col-12-xsmall" key={id}>
                                         <span className="image fit projectimg effect_lily">
-                                            <a href={projectlink}><img src={image} alt="images" /></a>
+                                            <a target="_blank" href={projectlink}><img src={image} alt="images" /></a>
                                         </span>
                                     </div>
 

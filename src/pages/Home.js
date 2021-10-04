@@ -3,7 +3,9 @@ import Homebanner from '../components/Homebanner'
 import HomeContact from '../components/HomeContact'
 import InnerMenu from '../components/InnerMenu'
 import LazyLoad from 'react-lazyload'
-import MegaSlider from '../components/MegaSlider';
+//import MegaSlider from '../components/MegaSlider';
+import PDPRelatedProduct from '../components/slider/PDPRelatedProduct';
+//import HomeTextBanner from '../components/HomeTextBanner';
 
 // const Homebanner = React.lazy(() => import('../components/Homebanner'));
 // const HomeContact = React.lazy(() => import('../components/HomeContact'));
@@ -23,6 +25,11 @@ const Home = () => {
             <LazyLoad height={500}>
                 {/* <!-- Main --> */}
                 <InnerMenu />
+            </LazyLoad>
+            <LazyLoad height={500}>
+                {/* <!-- Contact --> */}
+                <PDPRelatedProduct title="Sacheu Beauty Products"/>
+                {/* <HomeTextBanner /> */}
             </LazyLoad>
             <LazyLoad height={500}>
                 {/* <!-- Contact --> */}

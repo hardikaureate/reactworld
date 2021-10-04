@@ -7,7 +7,7 @@ import Slider from "react-slick"
 import Skeleton from 'react-loading-skeleton'
 import { ShopContext } from "../../context/ShopContext"
 
-const PDPRelatedProduct = () => {
+const PDPRelatedProduct = (props) => {
 
   const [loading, setLoading] = useState(true)
   const { fetchAllProducts, products, addItemToCheckout, product } = useContext(ShopContext)
@@ -57,7 +57,8 @@ const PDPRelatedProduct = () => {
               <h2>Related Sacheu Products</h2>
             </div> */}
             <div class="instaTitle">
-              <h2>Related Sacheu Products</h2>
+              <h2>{props.title}</h2>
+              {/* <h2>Related Sacheu Products</h2> */}
             </div>
             <div className="relatedproductContainer">
               <div className="product-listing">

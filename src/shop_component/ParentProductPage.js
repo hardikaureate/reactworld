@@ -18,7 +18,7 @@ const ParentProductPage = () => {
             <PDPYoutube />
             <Testimonial />
             <PDPProductReview />
-            <PDPRelatedProduct />
+            <PDPRelatedProduct title="Related Sacheu Products"/>
             <HomeTextBanner />
             <HomeContact />
         </>
