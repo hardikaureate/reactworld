@@ -69,4 +69,4 @@ const Projectlist = [{
     },
 ];
 
-export default Projectlist;
+export default Projectlist
