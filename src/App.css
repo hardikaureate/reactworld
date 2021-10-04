@@ -1522,6 +1522,23 @@ hr.major {
     .inner.pdppage {
         margin-left: 18px !important;
     }
+    svg.chakra-icon.cartIcon {
+        color: #fff;
+        width: 30px;
+        height: 40px;
+        display: inline-block;
+        position: fixed;
+        top: 4px;
+        right: 25px;
+    }
+    span.cartQuan {
+        right: 15px !important;
+        top: 5px !important;
+        font-size: 13px !important;
+        width: 20px !important;
+        height: 20px !important;
+        line-height: 16px !important;
+    }
 }
 
 @media screen and (max-width: 480px) {

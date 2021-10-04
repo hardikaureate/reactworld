@@ -16,7 +16,7 @@ import { ShopContext } from '../context/ShopContext';
 
 const Cart = () => {
     const {isCartOpen, closeCart, checkout, removeLineItem} = useContext(ShopContext)
-    console.log({checkout})
+    //console.log({checkout})
     return (
         <div className="maincartDrawer">
             <Drawer

@@ -5,6 +5,8 @@ import { ShopContext } from '../context/ShopContext';
 import { MdMenu, MdShoppingCart } from 'react-icons/md'
 
 const Header = () => {
+    const width = window.innerWidth
+    //console.log(width)
     const [time, setTime] = useState(new Date().toLocaleTimeString());
     useEffect(() => {
         const timeout = setTimeout(() => {
@@ -28,8 +30,15 @@ const Header = () => {
                             <li><Link to="/shop">Shop</Link></li>
                             <li><Link to="/post">Blog</Link></li>
                             <li><Link to="/contact">Contact</Link></li>
-                            <li><Box><Icon onClick={() => openCart()} fill="#fff" cursor="pointer" as={MdShoppingCart} w={30} h={30}></Icon>
-                                <Badge backgroundColor="#f3eafd" borderRadius="50%" className="cartQuan">{checkout.lineItems?.length}</Badge></Box></li>
+                            {width < 767 ?
+                                <li><Box><Icon className="cartIcon" onClick={() => openCart()} fill="#fff" cursor="pointer" as={MdShoppingCart} w={30} h={30}></Icon>
+                                    <Badge backgroundColor="#f3eafd" borderRadius="50%" className="cartQuan">{checkout.lineItems?.length}</Badge></Box>
+                                </li>
+                            :
+                                <li><Box><Icon onClick={() => openCart()} fill="#fff" cursor="pointer" as={MdShoppingCart} w={30} h={30}></Icon>
+                                    <Badge backgroundColor="#f3eafd" borderRadius="50%" className="cartQuan">{checkout.lineItems?.length}</Badge></Box>
+                                </li>
+                            }
                         </ul>
                     </div>
                 </header>
