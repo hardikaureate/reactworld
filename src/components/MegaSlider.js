@@ -39,7 +39,7 @@ const MegaSlider = () => {
                         {images.map((image, key) => {
                             return (
                                 <>
-                                    <img draggable={false} style={{ width: "100%", height: "100%" }} src={image} />
+                                    <img draggable={false} style={{ width: "100%", height: "100%" }} src={image} key={key}/>
                                 </>
                             );
                         })}

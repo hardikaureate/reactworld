@@ -1,22 +1,22 @@
 const Projectlist = [{
         id: 1,
         image: "images/pro1.jpeg",
-        name: "maggi",
+        name: "reactjs",
         category: "reactjs",
         projectlink: "https://reactjs.org/"
     },
     {
         id: 2,
         image: "images/pro2.jpeg",
-        name: "allu pakoida",
-        category: "wordpress",
+        name: "reactjs",
+        category: "reactjs",
         projectlink: "https://wordpress.org/"
 
     },
     {
         id: 3,
         image: "images/pro3.jpeg",
-        name: "corn",
+        name: "reactjs",
         category: "reactjs",
         projectlink: "https://reactjs.org/"
 
@@ -24,7 +24,7 @@ const Projectlist = [{
     {
         id: 4,
         image: "../images/pro4.jpeg",
-        name: "chola",
+        name: "vuejs",
         category: "vuejs",
         projectlink: "https://vuejs.org/"
 
@@ -32,7 +32,7 @@ const Projectlist = [{
     {
         id: 5,
         image: "../images/pro5.jpeg",
-        name: "pizza",
+        name: "wordpress",
         category: "wordpress",
         projectlink: "https://wordpress.org/"
 
@@ -40,7 +40,7 @@ const Projectlist = [{
     {
         id: 6,
         image: "../images/pro6.jpeg",
-        name: "Non-Veg Thali",
+        name: "node",
         category: "node",
         projectlink: "https://nodejs.org/en/"
 
@@ -48,7 +48,7 @@ const Projectlist = [{
     {
         id: 7,
         image: "../images/pro7.jpeg",
-        name: "Sweets",
+        name: "nextjs",
         category: "nextjs",
         projectlink: "https://nextjs.org/"
 
@@ -56,14 +56,14 @@ const Projectlist = [{
     {
         id: 8,
         image: "../images/pro8.jpeg",
-        name: "Rajma Rice",
+        name: "vue",
         category: "vue",
         projectlink: "https://vuejs.org/"
     },
     {
         id: 9,
         image: "../images/pro9.jpeg",
-        name: "samaso",
+        name: "wordpress",
         category: "wordpress",
         projectlink: "https://wordpress.org/"
     },

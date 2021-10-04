@@ -14,8 +14,8 @@ import PDPRelatedProduct from '../components/slider/PDPRelatedProduct';
 const Home = () => {
     return (
         <div>
-            {/* <Suspense fallback={<div style={{ position: 'fixed', left: '0%', top: '0%', zIndex: '9999', backgroundColor: 'lavender', width: '100%', height: '100%' }}>
-            </div>}> */}
+            <Suspense fallback={<div style={{ position: 'fixed', left: '0%', top: '0%', zIndex: '9999', backgroundColor: 'lavender', width: '100%', height: '100%' }}>
+            </div>}>
             <LazyLoad height={500}>
                 <Homebanner />
             </LazyLoad>
@@ -35,7 +35,7 @@ const Home = () => {
                 {/* <!-- Contact --> */}
                 <HomeContact />
             </LazyLoad>
-            {/* </Suspense> */}
+            </Suspense>
         </div>
     )
 }

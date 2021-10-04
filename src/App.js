@@ -17,6 +17,7 @@ import MainShop from './pages/MainShop';
 import ProductPage from './shop_component/ProductPage';
 import Cart from './shop_component/Cart';
 import ParentProductPage from './shop_component/ParentProductPage';
+import Documentation from './components/Documentation';
 //import CategoryPost from './components/CategoryPost';
 
 
@@ -53,6 +54,9 @@ function App() {
           </Route>
           <Route path="/shop" exact>
             <MainShop />
+          </Route>
+          <Route path="/doc" exact>
+            <Documentation />
           </Route>
           <Footer />
         </ScrollToTop>

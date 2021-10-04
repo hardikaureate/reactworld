@@ -1519,6 +1519,9 @@ hr.major {
     .mobfooter li a:after {
         border: none;
     }
+    .inner.pdppage {
+        margin-left: 18px !important;
+    }
 }
 
 @media screen and (max-width: 480px) {

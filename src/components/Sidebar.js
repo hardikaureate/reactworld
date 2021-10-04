@@ -6,7 +6,7 @@ import SidebarSocialMedia from './SidebarSocialMedia'
 const Sidebar = () => {
     return (
         <>
-            <div class="col-3 col-12-small biosection">
+            <div className="col-3 col-12-small biosection">
                 <SidebarAuthorInfo />
                 <AllPostListSidebar />
                 <SidebarSocialMedia />
