@@ -5,6 +5,8 @@ import InnerMenu from '../components/InnerMenu'
 import LazyLoad from 'react-lazyload'
 //import MegaSlider from '../components/MegaSlider';
 import PDPRelatedProduct from '../components/slider/PDPRelatedProduct';
+import RegisterForm from '../components/RegisterForm';
+import DupForm from '../components/DupForm';
 //import HomeTextBanner from '../components/HomeTextBanner';
 
 // const Homebanner = React.lazy(() => import('../components/Homebanner'));
@@ -33,7 +35,9 @@ const Home = () => {
             </LazyLoad>
             <LazyLoad height={500}>
                 {/* <!-- Contact --> */}
-                <HomeContact />
+                {/* <HomeContact /> */}
+                <RegisterForm />
+                {/* <DupForm /> */}
             </LazyLoad>
             
             </Suspense>

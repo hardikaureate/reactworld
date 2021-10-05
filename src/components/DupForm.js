@@ -1,7 +1,12 @@
 import React, { useState } from 'react'
 import '../../node_modules/font-awesome/css/font-awesome.min.css'
 
-const HomeContact = () => {
+const DupForm = () => {
+    //const [fields, setFields] = useState({})
+    const [errors, seterrors] = useState({})
+
+
+
     const [user, setUser] = useState({
         txtName: '',
         txtEmail: '',
@@ -16,8 +21,7 @@ const HomeContact = () => {
     }
 
     const formClear = () => {
-        setUser([])
-        //setUser("")
+        setUser({})
     }
 
     const onSubmit = async (e) => {
@@ -46,7 +50,32 @@ const HomeContact = () => {
                 alert("Data Stored Successfully")
             }
         } else {
-            alert("Please fill all the blanks")
+            //alert("Please fill all the blanks")
+            if (!txtName) {
+                errors["txtName"] = "*Please enter your Name.";
+            }
+
+            if (typeof txtName !== "undefined") {
+                if (!txtName.match(/^[a-zA-Z ]*$/)) {
+                    errors["txtName"] = "*Please enter alphabet characters only.";
+                }
+            }
+
+            if (!txtEmail) {
+                errors["txtEmail"] = "*Please enter your email-ID.";
+            }
+
+            if (typeof txtEmail !== "undefined") {
+                //regular expression for email validation
+                var pattern = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/i);
+                if (!pattern.test(txtEmail)) {
+                    errors["txtEmail"] = "*Please enter valid email-ID.";
+                }
+            }
+
+            if (!txtMessage) {
+                errors["txtMessage"] = "*Please enter your Message.";
+            }
         }
     }
 
@@ -61,6 +90,7 @@ const HomeContact = () => {
                                     <div className="field half">
                                         <label className="animate__animated animate__fadeInUp" for="name">Name</label>
                                         <input type="text" name="name" id="name" onChange={getUserData} value={user.txtName} name="txtName" />
+                                        <div className="errorMsg">{errors.txtName}</div>
                                     </div>
                                     <div className="field half">
                                         <label className="animate__animated animate__fadeInUp" for="email">Email</label>
@@ -110,4 +140,4 @@ const HomeContact = () => {
     )
 }
 
-export default HomeContact
+export default DupForm

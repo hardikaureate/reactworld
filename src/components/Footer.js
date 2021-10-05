@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../../node_modules/font-awesome/css/font-awesome.min.css'
+import FooterBlog from './FooterBlog'
 
 const Footer = () => {
     return (
@@ -20,7 +21,9 @@ const Footer = () => {
                                 <li>© {(new Date().getFullYear())} Hardik Devani</li><li>Design: <a target="_blank" href="https://hardik2626.github.io/reactlive">HD's Developer</a></li>
                             </ul>
                         </div>
-                        <ul class="links webhide mobfooter">
+                        {/* <ul class="links webhide mobfooter"> */}
+                        <div className="secondFooter"><h4>Company</h4>
+                        <ul class="links footerTwo mobfooter">
                             <li><Link to="/">Home</Link></li>
                             <li><Link to="/about">About</Link></li>
                             <li><Link to="/portfolio">Portfolio</Link></li>
@@ -28,8 +31,10 @@ const Footer = () => {
                             <li><Link to="/post">Blog</Link></li>
                             <li><Link to="/contact">Contact</Link></li>
                         </ul>
-                        <div className="footerTwo">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1206.1473713674466!2d72.82173637828168!3d21.18154719280015!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf7f61d1fcb814eb6!2sAureate%20Labs!5e0!3m2!1sen!2sin!4v1632722938248!5m2!1sen!2sin" width="100%" height="250" style={{ border: '0' }} allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                        <div className="footerThree">
+                            {/* <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1206.1473713674466!2d72.82173637828168!3d21.18154719280015!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf7f61d1fcb814eb6!2sAureate%20Labs!5e0!3m2!1sen!2sin!4v1632722938248!5m2!1sen!2sin" width="100%" height="250" style={{ border: '0' }} allowfullscreen="" loading="lazy"></iframe> */}
+                            <FooterBlog />
                         </div>
                     </div>
 
