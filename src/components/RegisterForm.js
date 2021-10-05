@@ -167,7 +167,7 @@ class RegisterForm extends React.Component {
                     {/* <span className="icon solid alt fa-envelope-square"></span> */}
                     <i className="footericon fa fa-envelope"></i>
                     <h3 className="animate__animated animate__fadeInUp">Email</h3>
-                    <a href="mailto:hardik.devani@aureatelabs.com" className="animate__animated animate__slideInDown" style={{ borderBottom: 'none' }}>hardik.devani@aureatelabs.com</a>
+                    <a target="_blank" href="mailto:&#104;&#097;&#114;&#100;&#105;&#107;&#046;&#100;&#101;&#118;&#097;&#110;&#105;&#064;&#097;&#117;&#114;&#101;&#097;&#116;&#101;&#108;&#097;&#098;&#115;&#046;&#099;&#111;&#109;" className="animate__animated animate__slideInDown" style={{ borderBottom: 'none' }}>&#104;&#097;&#114;&#100;&#105;&#107;&#046;&#100;&#101;&#118;&#097;&#110;&#105;&#064;&#097;&#117;&#114;&#101;&#097;&#116;&#101;&#108;&#097;&#098;&#115;&#046;&#099;&#111;&#109;</a>
                   </div>
                 </section>
                 <section>
