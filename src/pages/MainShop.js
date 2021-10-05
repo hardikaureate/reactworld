@@ -1,4 +1,5 @@
 import React from 'react'
+import RegisterForm from '../components/RegisterForm'
 import ShopProducts from '../shop_component/ShopProducts'
 
 const MainShop = () => {
@@ -29,6 +30,7 @@ const MainShop = () => {
                     </div>
                 </section>
             </div>
+            <RegisterForm />
         </>
     )
 }

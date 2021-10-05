@@ -96,6 +96,11 @@ const Documentation = () => {
                                                 <td>Item19</td>
                                                 <td>React Router Dom</td>
                                             </tr>
+                                            <tr>
+                                                <td>Item20</td>
+                                                <td>React Icons</td>
+                                            </tr>
+
                                         </tbody>
                                     </table>
                                 </div>
@@ -110,10 +115,6 @@ const Documentation = () => {
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td>Item20</td>
-                                                <td>React Icons</td>
-                                            </tr>
                                             <tr>
                                                 <td>Item21</td>
                                                 <td>Skeleton</td>
@@ -185,6 +186,14 @@ const Documentation = () => {
                                             <tr>
                                                 <td>Item38</td>
                                                 <td>Class Component</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Item39</td>
+                                                <td>Encoded Email Address</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Item40</td>
+                                                <td>Form Validation</td>
                                             </tr>
                                         </tbody>
                                     </table>

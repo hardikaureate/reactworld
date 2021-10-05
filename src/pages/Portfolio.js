@@ -1,7 +1,7 @@
 import React from 'react'
 import AllProject from '../components/Allproject'
+import RegisterForm from '../components/RegisterForm'
 //import CasestudyProjects from '../components/Casestudyprojects'
-import HomeContact from '../components/HomeContact'
 
 const About = () => {
     return (
@@ -25,7 +25,7 @@ const About = () => {
                 {/* <CasestudyProjects /> */}
                 <AllProject />
 
-                <HomeContact />
+                <RegisterForm />
             </div>
         </>
     )

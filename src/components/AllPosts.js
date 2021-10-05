@@ -1,6 +1,7 @@
 import React from 'react'
 import PostGrid from './PostGrid'
 import PostLarge from './PostLarge'
+import RegisterForm from './RegisterForm'
 
 
 const AllPosts = () => {
@@ -9,6 +10,7 @@ const AllPosts = () => {
         <>
             {/* <PostGrid /> */}
             <PostLarge />
+            <RegisterForm />
         </>
     )
 }
