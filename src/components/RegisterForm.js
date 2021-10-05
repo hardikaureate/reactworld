@@ -1,7 +1,6 @@
 import React from 'react';
 import '../assets/CSS/Cform.css';
 
-
 class RegisterForm extends React.Component {
   constructor() {
     super();
@@ -9,12 +8,9 @@ class RegisterForm extends React.Component {
       fields: {},
       errors: {}
     }
-
     this.handleChange = this.handleChange.bind(this);
     this.submituserRegistrationForm = this.submituserRegistrationForm.bind(this);
-
   };
-
   handleChange(e) {
     let fields = this.state.fields;
     fields[e.target.name] = e.target.value;
@@ -23,10 +19,12 @@ class RegisterForm extends React.Component {
     });
 
   }
-
+  formClear = () => {
+    this.setState({ fields: {} })
+  }
   submituserRegistrationForm(e) {
     e.preventDefault();
-    
+
     if (this.validateForm()) {
       let fields = {};
       fields["txtName"] = "";
@@ -37,7 +35,6 @@ class RegisterForm extends React.Component {
       this.setState({ fields: fields });
       alert("Form submitted");
     }
-
   }
 
   validateForm() {
@@ -107,16 +104,13 @@ class RegisterForm extends React.Component {
       errors: errors
     });
     return formIsValid;
-
-
   }
-
 
 
   render() {
     return (
       <>
-      {/* <div id="main-registration-container">
+        {/* <div id="main-registration-container">
         <div id="register">
           <h3>Registration page</h3>
           <form method="post" name="userRegistrationForm" onSubmit={this.submituserRegistrationForm} >
@@ -136,72 +130,69 @@ class RegisterForm extends React.Component {
           </form>
         </div>
       </div> */}
-      <div id="wrapper">
-                <section id="contact">
-                    <div className="inner">
-                        <section>
-                            <form method="post" name="userRegistrationForm" onSubmit={this.submituserRegistrationForm}>
-                                <div className="fields">
-                                    <div className="field half">
-                                        <label className="animate__animated animate__fadeInUp" for="name">Name</label>
-                                        <input type="text" name="txtName" onChange={this.handleChange} value={this.state.fields.txtName} />
-                                        <div className="errorMsg">{this.state.errors.txtName}</div>
-                                    </div>
-                                    <div className="field half">
-                                        <label className="animate__animated animate__fadeInUp" for="email">Email</label>
-                                        <input type="text" name="txtEmail" onChange={this.handleChange} value={this.state.fields.txtEmail} name="txtEmail" />
-                                        <div className="errorMsg">{this.state.errors.txtEmail}</div>
-                                    </div>
-                                    <div className="field">
-                                        <label className="animate__animated animate__fadeInUp" for="message">Message</label>
-                                        <textarea name="txtMessage" rows="6" onChange={this.handleChange} value={this.state.fields.txtMessage}></textarea>
-                                        <div className="errorMsg">{this.state.errors.txtMessage}</div>
-                                    </div>
-                                </div>
-                                <ul className="actions">
-                                    {/* <li><input onClick={onSubmit} type="submit" value="Send Message" className="primary animate__zoomIn animate__animated" /></li>
-                                    <li><input onClick={formClear} type="reset" value="Clear" className="animate__zoomIn animate__animated" /></li> */}
-                                    <li><input type="submit" value="Send Message" className="primary animate__zoomIn animate__animated" /></li>
-                                    
-                                </ul>
-                            </form>
-                        </section>
-                        <section className="split">
-                            <section>
-                                <div className="contact-method">
-                                    {/* <span className="icon solid alt fa-envelope-square"></span> */}
-                                    <i className="footericon fa fa-envelope"></i>
-                                    <h3 className="animate__animated animate__fadeInUp">Email</h3>
-                                    <a href="mailto:hardik.devani@aureatelabs.com" className="animate__animated animate__slideInDown" style={{ borderBottom: 'none' }}>hardik.devani@aureatelabs.com</a>
-                                </div>
-                            </section>
-                            <section>
-                                <div className="contact-method">
-                                    {/* <span className="icon brands alt fa-phone"></span> */}
-                                    <i className="footericon fa fa-phone"></i>
-                                    <h3 className="animate__animated animate__fadeInUp">Phone</h3>
-                                    <span className="animate__animated animate__slideInDown"><a href="tel:+919825457037" style={{ borderBottom: 'none' }}>(+91) 982-245-7037</a></span>
-                                </div>
-                            </section>
-                            <section>
-                                <div className="contact-method">
-                                    {/* <span className="icon brands alt fa-home"></span> */}
-                                    <i className="footericon fa fa-home"></i>
-                                    <h3 className="animate__animated animate__fadeInUp">Address</h3>
-                                    <span className="animate__animated animate__slideInDown">Office No. B-206, International Commerce Centre, Nr. Kadiwala School, Ring Road, Surat, Gujarat 395002</span>
-                                </div>
-                            </section>
-                        </section>
+        <div id="wrapper">
+          <section id="contact">
+            <div className="inner">
+              <section>
+                <form method="post" name="userRegistrationForm" onSubmit={this.submituserRegistrationForm}>
+                  <div className="fields">
+                    <div className="field half">
+                      <label className="animate__animated animate__fadeInUp" for="name">Name</label>
+                      <input type="text" name="txtName" onChange={this.handleChange} value={this.state.fields.txtName} />
+                      <div className="errorMsg">{this.state.errors.txtName}</div>
                     </div>
-                </section>
-            </div>
-      </>
+                    <div className="field half">
+                      <label className="animate__animated animate__fadeInUp" for="email">Email</label>
+                      <input type="text" name="txtEmail" onChange={this.handleChange} value={this.state.fields.txtEmail} name="txtEmail" />
+                      <div className="errorMsg">{this.state.errors.txtEmail}</div>
+                    </div>
+                    <div className="field">
+                      <label className="animate__animated animate__fadeInUp" for="message">Message</label>
+                      <textarea name="txtMessage" rows="6" onChange={this.handleChange} value={this.state.fields.txtMessage}></textarea>
+                      <div className="errorMsg">{this.state.errors.txtMessage}</div>
+                    </div>
+                  </div>
+                  <ul className="actions">
+                    {/* <li><input onClick={onSubmit} type="submit" value="Send Message" className="primary animate__zoomIn animate__animated" /></li>
+                                    <li><input onClick={formClear} type="reset" value="Clear" className="animate__zoomIn animate__animated" /></li> */}
+                    <li><input type="submit" value="Send Message" className="primary animate__zoomIn animate__animated" /></li>
+                    <li><input onClick={this.formClear} type="reset" value="Clear" className="animate__zoomIn animate__animated" /></li>
+                  </ul>
+                </form>
+              </section>
 
+              <section className="split">
+                <section>
+                  <div className="contact-method">
+                    {/* <span className="icon solid alt fa-envelope-square"></span> */}
+                    <i className="footericon fa fa-envelope"></i>
+                    <h3 className="animate__animated animate__fadeInUp">Email</h3>
+                    <a href="mailto:hardik.devani@aureatelabs.com" className="animate__animated animate__slideInDown" style={{ borderBottom: 'none' }}>hardik.devani@aureatelabs.com</a>
+                  </div>
+                </section>
+                <section>
+                  <div className="contact-method">
+                    {/* <span className="icon brands alt fa-phone"></span> */}
+                    <i className="footericon fa fa-phone"></i>
+                    <h3 className="animate__animated animate__fadeInUp">Phone</h3>
+                    <span className="animate__animated animate__slideInDown"><a href="tel:+919825457037" style={{ borderBottom: 'none' }}>(+91) 982-245-7037</a></span>
+                  </div>
+                </section>
+                <section>
+                  <div className="contact-method">
+                    {/* <span className="icon brands alt fa-home"></span> */}
+                    <i className="footericon fa fa-home"></i>
+                    <h3 className="animate__animated animate__fadeInUp">Address</h3>
+                    <span className="animate__animated animate__slideInDown">Office No. B-206, International Commerce Centre, Nr. Kadiwala School, Ring Road, Surat, Gujarat 395002</span>
+                  </div>
+                </section>
+              </section>
+            </div>
+          </section>
+        </div>
+      </>
     );
   }
-
-
 }
-
 
 export default RegisterForm;

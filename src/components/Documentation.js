@@ -182,6 +182,10 @@ const Documentation = () => {
                                                 <td>Item37</td>
                                                 <td>Cart & Checkout</td>
                                             </tr>
+                                            <tr>
+                                                <td>Item38</td>
+                                                <td>Class Component</td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>

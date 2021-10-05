@@ -35,9 +35,8 @@ const Home = () => {
             </LazyLoad>
             <LazyLoad height={500}>
                 {/* <!-- Contact --> */}
-                {/* <HomeContact /> */}
                 <RegisterForm />
-                {/* <DupForm /> */}
+                
             </LazyLoad>
             
             </Suspense>

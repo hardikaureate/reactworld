@@ -31,8 +31,11 @@ form input {
 }
 
 .errorMsg {
+    /* color: #cc0000; */
     color: #cc0000;
     margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .sucessMsg {
