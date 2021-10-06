@@ -16,7 +16,7 @@ export default function BlogDetailsPage() {
     }
     window.onbeforeunload = function () {
         window.scrollTo(0, 0)
-      }
+    }
     return (
         <div>
             <div id="wrapper">
@@ -28,7 +28,10 @@ export default function BlogDetailsPage() {
                             <h1 className="animate__animated animate__fadeInUp">{blogTitle}</h1>
                         </header>
                         <div className="content animate__pulse animate__animated">
-                            <p>We offer a great place to work for all our associates by providing the best facilities,<br /> rewards & growth programs on a continual basis to support both, your personal and professional growth.</p>
+                            
+                            <div className="blogshortcont">
+                                <content class="" dangerouslySetInnerHTML={{ __html: blogText }}></content>
+                            </div>
                         </div>
                     </div>
                 </section>

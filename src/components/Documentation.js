@@ -62,7 +62,7 @@ const Documentation = () => {
                                             </tr>
                                             <tr>
                                                 <td>Item11</td>
-                                                <td>Error Boundaries</td>
+                                                <td>Error Boundaries [Try & Catch]</td>
                                             </tr>
                                             <tr>
                                                 <td>Item12</td>

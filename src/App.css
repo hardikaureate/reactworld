@@ -4631,6 +4631,10 @@ content.postContent img {
     line-height: 24px;
 }
 
+.shortcont {
+    text-align: left;
+}
+
 .gridlogo {
     margin-left: 0px;
 }

@@ -4,6 +4,7 @@ import AboutCont from '../components/AboutCont'
 import LazyLoad from 'react-lazyload'
 import RegisterForm from '../components/RegisterForm'
 const About = () => {
+    
     return (
         <div>
             <LazyLoad throttle={200} height={500}>
