@@ -4784,3 +4784,7 @@ span.image.fit.projectimg.effect_lily {
 .shopcard span.image.fit.bioimage {
     padding: 0px;
 }
+
+.shopcard {
+    margin-bottom: 40px;
+}

@@ -10,8 +10,8 @@ const Sidebar = () => {
             <div className="col-3 col-12-small biosection">
                 <SidebarAuthorInfo />
                 <AllPostListSidebar />
-                <SidebarSocialMedia />
                 <SidebarOnlineShop />
+                <SidebarSocialMedia />
             </div>
         </>
     )
