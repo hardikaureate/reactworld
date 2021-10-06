@@ -4,12 +4,7 @@ import { Link } from 'react-router-dom'
 const AboutCont = () => {
     return (
         <>
-            {/* <!-- Main --> */}
-
             <div id="main">
-
-
-
                 {/* <!-- Two --> */}
                 <section id="two" className="spotlights">
                     <section>
@@ -92,7 +87,6 @@ const AboutCont = () => {
                         </ul>
                     </div>
                 </section>
-
             </div>
         </>
     )

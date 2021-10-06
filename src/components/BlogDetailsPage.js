@@ -2,6 +2,7 @@ import React from 'react'
 import allblog from '../blogdata/blog.json'
 import { useParams } from 'react-router'
 import Sidebar from './Sidebar'
+import RegisterForm from './RegisterForm'
 
 // export default BlogDetailsPage = () => {
 export default function BlogDetailsPage() {
@@ -57,6 +58,7 @@ export default function BlogDetailsPage() {
                     </div>
                 </section>
             </div>
+            <RegisterForm />
         </div>
     )
 }

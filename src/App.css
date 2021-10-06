@@ -4788,3 +4788,90 @@ span.image.fit.projectimg.effect_lily {
 .shopcard {
     margin-bottom: 40px;
 }
+
+.github--profile__info {
+    background: #fff;
+    text-align: center;
+    padding: 1.875rem 0.9375rem;
+    display: flex;
+    align-items: center;
+}
+
+.github--profile__info img {
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    display: block;
+    box-shadow: 0 0 0.0625rem rgb(0 0 0 / 50%);
+}
+
+.gitImage {
+    padding-right: 20px;
+}
+
+section.github--profile h3.gitblocktitle {
+    text-align: center;
+    font-size: 22px !important;
+    padding-top: 10px;
+    text-transform: uppercase;
+    color: #000 !important;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.github--profile {
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 0px 0px;
+    box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.github--profile__info h3 a {
+    font-size: 25px !important;
+    color: #242943 !important;
+}
+
+.github--profile__info h4 {
+    font-size: 20px !important;
+    color: #bdcbce !important;
+}
+
+.github--profile__state {
+    background: #1a4e8e;
+    text-align: center;
+    padding: 1.875rem 0.9375rem;
+    border-radius: 0 0 0.3125rem 0.3125rem;
+}
+
+.github--profile__state ul {
+    direction: ltr;
+    margin-bottom: 0px !important;
+}
+
+.github--profile__state li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.github--profile__state a {
+    color: #fff;
+    border: none;
+}
+
+.github--profile__state p {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+    display: block;
+    margin-bottom: 0px !important;
+}
+
+.github--profile__state span {
+    font-size: 0.844rem;
+    letter-spacing: 0.0625rem;
+    color: #fff;
+}
