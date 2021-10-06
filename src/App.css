@@ -4479,6 +4479,7 @@ span.image.fit.bioimage {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 h3.biotitle {
@@ -4633,6 +4634,15 @@ content.postContent img {
 
 .shortcont {
     text-align: left;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    display: -webkit-box !important;
+    height: calc(3 * 24px);
+    font-size: 17px;
+    line-height: 24px;
+    width: 100% !important;
 }
 
 .gridlogo {

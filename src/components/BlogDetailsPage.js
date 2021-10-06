@@ -27,10 +27,9 @@ export default function BlogDetailsPage() {
                         <header className="major">
                             <h1 className="animate__animated animate__fadeInUp">{blogTitle}</h1>
                         </header>
-                        <div className="content animate__pulse animate__animated">
-                            
-                            <div className="blogshortcont">
-                                <content class="" dangerouslySetInnerHTML={{ __html: blogText }}></content>
+                        <div className="shortcont content animate__pulse animate__animated">
+                            <div className="">
+                                <div class="detailsExcerpt" dangerouslySetInnerHTML={{ __html: blogText }}></div>
                             </div>
                         </div>
                     </div>
