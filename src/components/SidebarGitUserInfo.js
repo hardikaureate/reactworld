@@ -36,9 +36,9 @@ const SidebarGitUserInfo = () => {
                 </div>
                 <div className="github--profile__state">
                     <ul>
-                        <li><a href={users.html_url}><p>23</p><span>Followers</span></a></li>
-                        <li><a href={users.html_url}><p>75</p><span>Repositoriy</span></a></li>
-                        <li><a href={users.html_url}><p>43</p><span>Following</span></a></li>
+                        <li><a href={`${users.html_url}?tab=followers`}><p>{users.followers}</p><span>Followers</span></a></li>
+                        <li><a href={`${users.html_url}?tab=repositories`}><p>{users.public_repos}</p><span>Repositoriy</span></a></li>
+                        <li><a href={`${users.html_url}?tab=following`}><p>{users.following}</p><span>Following</span></a></li>
                     </ul>
                 </div>
             </section>

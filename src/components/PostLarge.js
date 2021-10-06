@@ -1,14 +1,14 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import allblog from '../blogdata/blog.json'
-import Sidebar from './Sidebar';
+import Sidebar from './Sidebar'
 
 const PostLarge = () => {
     var path = 'images/blogimage/blogbg.jpeg'
     var divStyle = {
         backgroundImage: 'url(/' + path + ')',
         backgroundPosition: 'bottom'
-    };
+    }
     return (
         <>
             <div id="wrapper">
@@ -62,5 +62,4 @@ const PostLarge = () => {
         </>
     )
 }
-
 export default PostLarge
