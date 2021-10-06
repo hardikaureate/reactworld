@@ -1,6 +1,7 @@
 import React from 'react'
 import AllPostListSidebar from './AllPostListSidebar'
 import SidebarAuthorInfo from './SidebarAuthorInfo'
+import SidebarOnlineShop from './SidebarOnlineShop'
 import SidebarSocialMedia from './SidebarSocialMedia'
 
 const Sidebar = () => {
@@ -10,6 +11,7 @@ const Sidebar = () => {
                 <SidebarAuthorInfo />
                 <AllPostListSidebar />
                 <SidebarSocialMedia />
+                <SidebarOnlineShop />
             </div>
         </>
     )

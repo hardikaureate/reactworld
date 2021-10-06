@@ -7,7 +7,7 @@ import ClientData from '../../blogdata/blog.json'
 
 
 const testimonial = ClientData.testimonials
-console.log(testimonial)
+//console.log(testimonial)
 
 const Testimonial = () => {
     const [loading, setLoading] = useState(true)

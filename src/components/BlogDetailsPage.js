@@ -1,20 +1,20 @@
 import React from 'react'
 import allblog from '../blogdata/blog.json'
 import { useParams } from 'react-router'
-import Sidebar from './Sidebar';
+import Sidebar from './Sidebar'
 
 // export default BlogDetailsPage = () => {
 export default function BlogDetailsPage() {
     var { slug } = useParams(),
-        post = findPostBySlug(slug);
-    console.log(post)
+        post = findPostBySlug(slug)
+    //console.log(post)
     const { blogCategory, blogTitle, postedOn, author, blogImage, blogText } = post
     var myvariable = post.blogImage
     var divStyle = {
         backgroundImage: 'url(/' + myvariable + ')',
-    };
+    }
     window.onbeforeunload = function () {
-        window.scrollTo(0, 0);
+        window.scrollTo(0, 0)
       }
     return (
         <div>
@@ -62,5 +62,5 @@ export default function BlogDetailsPage() {
 }
 
 function findPostBySlug(slug) {
-    return allblog.data.find(myslug => myslug.slug === slug);
+    return allblog.data.find(myslug => myslug.slug === slug)
 }

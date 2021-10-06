@@ -1,36 +1,34 @@
-import React, { useState } from "react";
-import CasestudyProjects from "./Casestudyprojects";
-import Projectlist from "../projectAPI";
-import ProjectMenu from "./Projectmenu";
+import React, { useState } from "react"
+import CasestudyProjects from "./Casestudyprojects"
+import Projectlist from "../projectAPI"
+import ProjectMenu from "./Projectmenu"
 
 const uniqueList = [
   "All",...new Set(
     Projectlist.map((curElem) => {
-      return curElem.category;
+      return curElem.category
     })
   ),
   
-];
-
-
-console.log(uniqueList);
+]
+//console.log(uniqueList)
 
 const AllProject = () => {
-  const [projectData, setMenuData] = useState(Projectlist);
-  const [menuList, setMenuList] = useState(uniqueList);
+  const [projectData, setMenuData] = useState(Projectlist)
+  const [menuList, setMenuList] = useState(uniqueList)
 
   const filterItem = (category) => {
     if (category === "All") {
-      setMenuData(Projectlist);
-      return;
+      setMenuData(Projectlist)
+      return
     }
 
     const updatedList = Projectlist.filter((curElem) => {
-      return curElem.category === category;
-    });
+      return curElem.category === category
+    })
 
-    setMenuData(updatedList);
-  };
+    setMenuData(updatedList)
+  }
 
   return (
     <>
@@ -40,7 +38,7 @@ const AllProject = () => {
         <CasestudyProjects projectData={projectData} />
       </div>
     </>
-  );
-};
+  )
+}
 
-export default AllProject;
+export default AllProject

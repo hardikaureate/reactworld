@@ -46,8 +46,7 @@ const PDPRelatedProduct = (props) => {
     extractedInfo = decodedId.split(/[\s/]+/).pop()
   }
   //console.log({ products })
-
-  if (!products) return <div>...Loading</div>
+  
   return (
     <div id="wrapper" className="pdprelatedprodsection">
       <div className="inner">
@@ -64,7 +63,6 @@ const PDPRelatedProduct = (props) => {
               <div className="product-listing">
                 <Slider infinite={products && products.length > 3} {...settings}>
                   {products.map((product) => (
-
                     <div className="itemBox" key={product.id}>
                       <div className="item">
                         {product.variants[0].compareAtPrice > product.variants[0].price ? (<span className="sale">SALE</span>) : (<span></span>)}

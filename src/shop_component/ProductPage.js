@@ -49,7 +49,6 @@ const ProductPage = () => {
     if (!product.title) return <div><div class="loading">Loading&#8230;</div></div>
     //if (!product.title) return <div><div class="spinner"><div class="spinner spinner2"><div class="spinner spinner3"></div></div></div></div>
 
-
     return (
         <>
             <div id="wrapper">
@@ -89,7 +88,13 @@ const ProductPage = () => {
                                     {/* <Heading pb="2rem" className="PDP_productTitle">{product.id}</Heading> */}
                                     <Text className="PDP_cartprice" fontWeight="bold" pb="1rem">{loading ? <Skeleton width={75} height={70} /> : `$${product.variants[0].price}`}</Text>
 
+                                    <div style={{ textAlign: 'center' }} className="prosreview">
+                                        <div class="yotpo bottomLine" data-product-id={product.id} style={{ display: 'inline-block' }}></div>
+                                    </div>
 
+                                    <div style={{ textAlign: 'center' }}>
+                                        <div class="yotpo bottomLine" data-product-id="4746070032433" style={{ display: 'inline-block' }}></div>
+                                    </div>
                                     <Text>
                                         <div style={{ textAlign: 'center' }} className="prosreview">
                                             <div class="yotpo bottomLine" data-product-id={extractedInfo} style={{ display: 'inline-block' }}></div>

@@ -4780,3 +4780,7 @@ span.image.fit.projectimg.effect_lily {
 .cartQty {
     max-width: 120px;
 }
+
+.shopcard span.image.fit.bioimage {
+    padding: 0px;
+}
