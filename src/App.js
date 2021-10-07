@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import './animate.css'
 import {
@@ -14,7 +15,6 @@ import BlogDetailsPage from './components/BlogDetailsPage';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
 import MainShop from './pages/MainShop';
-import ProductPage from './shop_component/ProductPage';
 import Cart from './shop_component/Cart';
 import ParentProductPage from './shop_component/ParentProductPage';
 import Documentation from './components/Documentation';
@@ -22,6 +22,9 @@ import Documentation from './components/Documentation';
 
 
 function App() {
+  const [loading, setLoading] = useState(true)
+  useEffect(() => {setTimeout(() => setLoading(false), 1000)}, [])
+  if (loading) return <div><div class="loading">Loading&#8230;</div></div>
   return (
     <div className="App">
       <Router>

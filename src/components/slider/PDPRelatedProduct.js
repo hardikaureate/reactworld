@@ -21,10 +21,10 @@ const PDPRelatedProduct = (props) => {
     arrows: false,
     infinite: false,
     slidesToShow: 4,
-    slidesToScroll: 1,
-    // autoplay: true,
-    // speed: 3000,
-    // autoplaySpeed: 500,
+    slidesToScroll: 2,
+    autoplay: true,
+    speed: 5000,
+    autoplaySpeed: 1000,
     responsive: [
       {
         breakpoint: 1199,
@@ -46,7 +46,7 @@ const PDPRelatedProduct = (props) => {
     extractedInfo = decodedId.split(/[\s/]+/).pop()
   }
   //console.log({ products })
-  
+
   return (
     <div id="wrapper" className="pdprelatedprodsection">
       <div className="inner">
@@ -80,11 +80,10 @@ const PDPRelatedProduct = (props) => {
                           <p className="relatedProPrice">
                             {loading ? <Skeleton height={30} /> : `${product.variants[0].price}`}
                           </p>
-                          
-                            <div style={{ textAlign: 'center' }} className="">
-                              <div class="yotpo bottomLine" data-product-id="4746070032433" style={{ display: 'inline-block' }}></div>
-                            </div>
-                          
+                          <div style={{ textAlign: 'center' }} className="">
+                            <div class="yotpo bottomLine" data-product-id="4746070032433" style={{ display: 'inline-block' }}></div>
+                          </div>
+
                           {loading ? <Skeleton height={42} /> : <Button mt="3%" className="cartButton" onClick={() => addItemToCheckout(product.variants[0].id, 1)}>Add To Cart</Button>}
                         </div>
                       </div>

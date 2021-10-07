@@ -14,6 +14,7 @@ const uniqueList = [
 //console.log(uniqueList)
 
 const AllProject = () => {
+  const [loading, setLoading] = useState(true)
   const [projectData, setMenuData] = useState(Projectlist)
   const [menuList, setMenuList] = useState(uniqueList)
 
@@ -29,7 +30,7 @@ const AllProject = () => {
 
     setMenuData(updatedList)
   }
-
+  //if (loading) return <div><div class="loading">Loading&#8230;</div></div>
   return (
     <>
       <div id="wrapper">
