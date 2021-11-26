@@ -24,7 +24,7 @@ import Documentation from './components/Documentation';
 function App() {
   const [loading, setLoading] = useState(true)
   useEffect(() => {setTimeout(() => setLoading(false), 1000)}, [])
-  if (loading) return <div><div class="loading">Loading&#8230;</div></div>
+  //if (loading) return <div><div class="loading">Loading&#8230;</div></div>
   return (
     <div className="App">
       <Router>
